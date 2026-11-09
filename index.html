@@ -1,0 +1,1621 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Türkçe interaktif Ramazan takvimi: her gün açılan bir kapının ardında sure, dua veya İslami hikâye.">
+<meta name="theme-color" content="#2e0a0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%2296%22%20fill%3D%22%234e161b%22/%3E%3Cpath%20d%3D%22M146%20430V250Q146%20150%20256%20112Q366%20150%20366%20250V430Z%22%20fill%3D%22%23d9b26a%22/%3E%3Cpath%20d%3D%22M170%20430V256Q170%20176%20256%20144V430Z%22%20fill%3D%22%235a3322%22/%3E%3Cpath%20d%3D%22M342%20430V256Q342%20176%20256%20144V430Z%22%20fill%3D%22%235a3322%22/%3E%3Cpath%20d%3D%22M256%2040a34%2034%200%201%200%200%2068a26%2026%200%201%201%200%20-68Z%22%20fill%3D%22%23f3dcae%22/%3E%3Ccircle%20cx%3D%22236%22%20cy%3D%22300%22%20r%3D%227%22%20fill%3D%22%23d9b26a%22/%3E%3Ccircle%20cx%3D%22276%22%20cy%3D%22300%22%20r%3D%227%22%20fill%3D%22%23d9b26a%22/%3E%3C/svg%3E%0A" type="image/svg+xml">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADtElEQVR4Xu3cO3ITWxSGUZliDE4cMAViRkBkBkBKSkjsckxISsoAyBgBMVMgZRQUpSrhsq0+Z+vROvvstXJQP3593XZx79Xt9c0GnvPCZWEf48A4iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45fjn288v8Us3v5fzn+J+u028f/Ox8nXYp245LKOp6Dgso0fFcVhGp3Lj8O7Zr9Y4LCOk1jge8hNKU91x0FRoHJ4pUYXGQZRx4DekxNUth1eQprrjoKnQOPxiI6rQOJ7yZFlWehz+mY9x/Pfsk0U/9ilXDvvoV24cm4199Loq+7992vc08UPNTt1xdL6NVt5K6XHsPK1I5U0oB22l/7uVzWbz+eu7hYv06cP39iWcV8XHyvIg9ik4lELjOGwTT9VZSYlxnGoWD1WYyOTjOMcs6kxk2nGcexYVJjLnr8/XXEbzR568ZivHyrN4ZLIXkanKcdllzJeQecZx8WVsDXIYJzHJOIa6JUMdzDFmeOc45mbc3/9YuHx3d28PvrgTvH+kH8dhy1jexFOHrST7PnKPI7qM5iZ+/f7z+tX1CVuSeh+JxxFaRnMWW81xbIVCkncfk7yQLutcRr+T/4VjylqOzmxE72JnOXY6E5I0HinLcaZlHKBzfJ0HPJqU4+jReduOt9oHrS/fOHq+hSvfsJ6P6zns0SQbR88l7rlVJ9fzoT0HP5Rk42jquUlncsGPPpNM42h+8y5+e5oH0DyFoWQaBytLM47md675rV1H8zCaJzKONONY1rwlaxrqYI6RYxyJvm09spxOjnEkysbWHPFIP45hb8OwB9YvwTiyRDgkxUklGMeCwb+dgx9eU+5xcFajjyNFfg8z/qmNPo68z5QJfmxJPA7OLes4Er3rJTrUR4Yex/hP5SMNfoJDj4PLMg72SjmOdE/xdAe8lXIcrGPccQz+snYqI5/muOPg4oyDiV5Ik77cZTxs5WCicrAa5UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iLu6vb6J/ylK8FjBY4U45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45UA5iFMOlIM45WCvv0yQ0+kFDzgzAAAAAElFTkSuQmCC">
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20%22Ramazan%20Kap%C4%B1lar%C4%B1%22%2C%20%22short_name%22%3A%20%22Ramazan%22%2C%20%22lang%22%3A%20%22tr%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22background_color%22%3A%20%22%232e0a0e%22%2C%20%22theme_color%22%3A%20%22%232e0a0e%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAMHElEQVR4Xu3dPZYdRxmA4TFHa1DigC0QswIiswBSUkLHPo4JnZJ6AWSswDFbIGUVHDM%2B8liauXN/uqqr%2B32eWGPpVre%2Bt6p7Rv7qm49fPwHQ87veRwbgZwIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFEfop%2Bbqh9/%2BuH5o//lj3%2BrrgH8QgA4v09D3%2BiHlwSA0/ps7pv%2B8BkB4GxenfumP3xJADiVt6a/J/4gAJyWjT/cyreBcgamP9zBIyCO7cLoBy5zAuDA3p3%2BHv3DBQLAUZn%2B8CAB4JBMf3icAHA8705/4BoCwMFcM/09%2BodrCABHcs30B64kAJyN7T9cSQA4DNt/2JYAcAxXTn/bf7ieAABECQAHcOX2H7iJALC666e/5z9wEwEAiBIAgCgBYGnXP/8BbiUAnIQXAHArAQCIEgDW5fkPDCUAAFECABAlAABRAsCivACA0QQAIEoAAKIEACBKAACiBICT8NIYbiUAAFECABAlAABRAsB5eA0ANxEAgCgBYFH%2BBy8wmgBwKp4CwfUEACBKADgbhwC4kgCwLq8BYCgB4IQcAuAaAgAQJQAs7e6nQA4B8C4B4LQ0AC4TAM5MA%2BACAWB1dz8FApwAOLxHGuAQAG9xAuD8NABe9dU3H7%2B2NBzC43P8kZMEnI8TAIfx%2BPh%2BPCFwJgJAiwbAJx4BcTBbTfDHzxNwdE4AHMxWg3urkMBxOQFwSBuO762KAocjABzVhg14dncJfvzph7u/FnYkABzY5g345N2B/vK3fvcXw5oEgGMb14Armf4clwBwBrtkwOjn6HwXEGcwfxbP/x1hc04AnMqEo4DRz2k4AXAqo6fz6P8%2BzOQEwGlteBow9zklAeD87i6Buc%2B5CQAt78bA0KdDAACivAQGiBIAgKgP0c9Nyd//8ef7Pu63f/3nfV8Ih%2BAdAKdy96y/nipwGgLA4U0Y%2Bm8RAw5NADikHYe%2BGHAaAsCRLDj3v%2BRYwFEIAAdwiLmvBByOALCug859JeAoBIAVnWb0v%2BTREKsRABZyyrnvQMCyBIAlREa/AwFLEQB2Fhz9MsAi/FtA7Ck%2B/Z%2BerAB7cgJgH0b/Z7wiZj4BYDaj/wIZYCYBYB6j/0oywBzeATCJ6X89a8UcTgAMZ5zdzVGAoZwAGMv0f4TVYygnAEYxvDbkKMAITgAMYfpvy3oyggCwPdNqBKvK5gSAjZlT41hbtuUdAJsxnqbxSoBNOAGwDdN/JqvNJgSADZhH81lzHicAPMok2ouV50ECwEPMoH1Zfx4hANzP9FmBq8DdBIA7mTvrcC24jwBwDxNnNa4IdxAAbmbWrMl14VYCwG1MmZW5OtzETwJzg%2BPOl%2B%2B//9cNn/P/vvvuT7d%2BySL8nDBXEgCudaDpf8e4v8aBkqABXEMAuMr603/Q0H/L%2BjHQAN4lALxv5ek/ee5/aeUSaACXCQDvWHP67z73j1ICDeACAeCSBaf/gqP/pQUPBBrAWwSAN602/Tcf/f/%2Bz3%2BfP/wffv9x2/tgtQxoAK8SAF631PTffPQ/GxeAZ0tlQAP40geLwsoGjf45nv/wS2UAXnIC4BUrbP8njP7RJ4CXVsiAQwCfEQA%2Bt/v0nzD6n80MwLPdM6ABvOTfAuI3OtN/F9Pa9pbdry9LcQLgV/tOh/nDcf4J4JN9jwLOATxzAmAJ86f/vmqflzU5AfCLvbb/O47CHU8Aux8FHAJwAqA7/RexV//26j1L8QiI3ew1%2B1ZjHdiLR0DssBlcZOSt8Ajopflvhj0IinMCqJv/KGCR6b%2Bg%2BSsz/%2BqzFAFgqvkz7lisDzMJQNrkDaDpdo3JqzT5HmApAtA1%2BW/%2B5Ll2aJPXavKdwDoEgBkmT7QTsGJMIABRMzd9Ztl9Zq7bzPuBdQgAY82cYudj9RhKAIqmbffMr8dNW8NpdwXrEICcaX/Pp02u05u2ktPuDRYhAAwxbWZFWE9GEICWOVs802qEOas65w5hEQLAxubMqSZry7YEIGTC5s6EGm3CCk%2B4T1iEAABECUDFhG3dhM0pT08z1nnC3cIKBIBtmP4zWW02IQAJozd05tF8o9d89D3DCgQAIEoAzm/0Vm70VpS3jF750XcOuxMAHjJ6BnGZ9ecRAnByQzdxps8Khl6FofcPuxMAgCgBOLOh27ehG09uMvRaDL2L2JcAcI%2BhE4c7uCLcQQAAogTgtMad3G021zTuuoy7l9iXAABECcA5jduyjdtm8rhxV2fcHcWOBAAgSgC4wbgNJltxjbieAJzQoNO6yXIUg67UoPuKHQkAQJQAnM2gbdqgTSWDDLpeg%2B4u9iIAAFECwPsGbScZylXjXQJwKk7ojOYeOxMB4B02ksfl2nGZAABECcB5OJszhzvtNASASzxDODpXkAsEACBKAHiTzeM5uI68RQBOwmNZZnK/nYMA8DrbxjNxNXmVAABECcAZOI8zn7vuBASAV3hicD6uKV8SAIAoAQCIEoDD2/xRrGcFZ7X5ld383mMyAQCIEgCAKAHgNzZ/SsBSXF9eEgCAKAE4Nm/h2Jc78NAEgF95PlDgKvOJAABECQBAlAAARAnAgW37/s2j4Y5tr/W29yEzCQBAlAAARAkAQJQA8LNtHwqzPlecpycBAKhyAgCIEoCj8r13rMPdeFACABAlAHgfGOU9MAIAECUAAFECABAlAABRAgAQJQB1vhWkzNWPE4BD8nM3rMY9eUQCABAlAABRAgAQJQAAUQIAECUAAFECkObbwHEPlAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARH31zcevox8doM0JACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACi/gcx6E6ZxUnwIQAAAABJRU5ErkJggg%3D%3D%22%2C%20%22sizes%22%3A%20%22512x512%22%2C%20%22type%22%3A%20%22image/png%22%7D%5D%7D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ramazan Kapıları">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
+<title>Ramazan Kapıları</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: gece gökyüzü + asılı fenerler + cami silueti; altında 30 sivri kemerli cami kapısı ızgarası */
+:root{
+  --night:#2e0a0e; --night-2:#4e161b; --night-3:#6a2227;
+  --gold:#d9b26a; --gold-deep:#9a7233; --ember:#f0b65a;
+  --ink:#f4e9d8; --muted:#d3bda5;
+  --tile:#5a3322; --tile-deep:#2a140c;
+  --stone:#ecdcc0; --stone-2:#cdb48c;
+  --display:"Cormorant Garamond", "Palatino Linotype", Georgia, serif;
+  --body:"Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+  --arabic:"Amiri", "Traditional Arabic", "Scheherazade New", serif;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--night)}
+body{background-color:var(--night);background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='120' viewBox='0 0 80 120'%3E%3Cg fill='none' stroke='%23d9b26a' stroke-opacity='.11' stroke-width='1.2'%3E%3Cpath d='M40 0C62 20 62 40 40 60C18 80 18 100 40 120M40 0C18 20 18 40 40 60C62 80 62 100 40 120M0 -60C22 -40 22 -20 0 0C-22 20 -22 40 0 60C22 80 22 100 0 120M80 -60C58 -40 58 -20 80 0C102 20 102 40 80 60C58 80 58 100 80 120'/%3E%3C/g%3E%3Cg fill='%23f4e9d8' fill-opacity='.10'%3E%3Ccircle cx='40' cy='30' r='3'/%3E%3Ccircle cx='40' cy='90' r='3'/%3E%3Ccircle cx='0' cy='60' r='3'/%3E%3Ccircle cx='80' cy='60' r='3'/%3E%3C/g%3E%3C/svg%3E"),
+  radial-gradient(ellipse at 50% 20%,#6a2227 0,#3f1015 55%,#240709 100%);background-attachment:fixed}
+body{color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;min-height:100%;overflow-x:hidden}
+#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:0 48px}
+
+/* ---------- Hero ---------- */
+header{position:relative;text-align:center;padding-block:0}
+.lanterns{position:relative;width:100vw;margin-left:calc(50% - 50vw);height:clamp(230px,30vw,520px);margin-bottom:8px;pointer-events:none;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent)}
+.lanterns svg{display:block;width:100%;height:100%}
+.swing{transform-box:view-box;animation:sway 7s ease-in-out infinite}
+.lampglow{animation:lampflick 3s ease-in-out infinite}
+@keyframes lampflick{0%,100%{opacity:.55}40%{opacity:.75}55%{opacity:.45}}
+.lantern{position:absolute;top:-2px;transform-origin:top center;animation:sway 7s ease-in-out infinite}
+.lantern .cord{width:1.5px;height:var(--h);margin:0 auto;background:linear-gradient(var(--gold-deep),var(--gold))}
+.lantern .cap{width:22px;height:11px;margin:0 auto;background:var(--gold);clip-path:polygon(30% 0,70% 0,100% 100%,0 100%)}
+.lantern .glass{width:30px;height:42px;margin:0 auto;border-radius:45% 45% 32% 32%/35% 35% 22% 22%;
+  background:radial-gradient(circle at 50% 55%,#fff6d2 0 12%,var(--ember) 42%,#a45318 100%);
+  box-shadow:0 0 22px 8px rgba(244,163,64,.45);position:relative;animation:flicker 2.6s infinite}
+.lantern .glass::before{content:"";position:absolute;inset:4px 9px;border-left:1.5px solid rgba(90,40,8,.55);border-right:1.5px solid rgba(90,40,8,.55)}
+.lantern .foot{width:16px;height:9px;margin:0 auto;background:var(--gold);clip-path:polygon(0 0,100% 0,65% 100%,35% 100%)}
+.lantern .tassel{width:2px;height:12px;margin:0 auto;background:var(--gold-deep)}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes flicker{0%,100%{filter:brightness(1)}45%{filter:brightness(1.18)}50%{filter:brightness(.88)}55%{filter:brightness(1.1)}}
+
+.moon{width:62px;height:62px;border-radius:50%;margin:0 auto 6px;box-shadow:16px -8px 0 0 var(--gold);transform:translateX(-8px) rotate(-18deg);filter:drop-shadow(0 0 14px rgba(217,178,106,.55))}
+.ar-greet{font-family:var(--arabic);font-size:clamp(30px,6vw,44px);color:var(--gold);margin:4px 0 0;line-height:1.3}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(30px,6.4vw,62px);line-height:1.08;margin:8px 0 12px;letter-spacing:.2em;text-transform:uppercase;text-wrap:balance;
+  color:var(--ink);text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.lede{max-width:34em;margin:0 auto;color:var(--muted);font-size:18px;text-wrap:balance}
+.skyline{display:block;width:100%;height:auto;margin-top:28px;max-width:100%}
+.skyline path,.skyline rect,.skyline circle{fill:var(--night-2)}
+
+/* ---------- Status ---------- */
+.status{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;
+  background:linear-gradient(180deg,var(--night-2),rgba(78,22,27,.6));border:1px solid rgba(217,178,106,.22);border-radius:14px;padding:16px 20px;margin-top:-2px}
+.status-main{font-family:var(--display);font-size:22px;color:var(--ink);min-width:0}
+.status-main b{color:var(--gold)}
+.status-sub{color:var(--muted);font-size:15px}
+.progress{display:flex;flex-direction:column;gap:6px;min-width:200px;flex:0 1 280px}
+.progress-label{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.beads{display:grid;grid-template-columns:repeat(30,1fr);gap:3px}
+.beads i{height:8px;border-radius:4px;background:rgba(211,189,165,.18)}
+.beads i.on{background:var(--gold);box-shadow:0 0 6px rgba(217,178,106,.6)}
+.beads i.avail{background:rgba(217,178,106,.35)}
+
+/* ---------- Doors ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(122px,1fr));gap:30px 18px;margin-top:34px}
+.door{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.door:focus-visible{outline:none}
+.door:focus-visible .art{outline:2px solid var(--gold);outline-offset:6px;border-radius:8px}
+.art{position:relative;width:100%;aspect-ratio:5/8;perspective:720px}
+.halo{position:absolute;inset:-14% -18%;border-radius:50%;background:radial-gradient(closest-side,rgba(244,163,64,.55),transparent);opacity:0;pointer-events:none}
+.door.today .halo{opacity:1;animation:pulse 2.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(.92);opacity:.55}50%{transform:scale(1.05);opacity:1}}
+.frame{position:absolute;inset:0;clip-path:var(--arch);background:linear-gradient(160deg,#f3dcae,var(--gold) 35%,var(--gold-deep) 70%,#7a5418)}
+.inner{position:absolute;inset:6px;clip-path:var(--arch);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:18%;gap:2px;
+  background:radial-gradient(ellipse at 50% 72%,#fff0c2 0,#f6b455 26%,#9c4f16 62%,#2a1306 100%)}
+.inner .n{font-family:var(--display);font-weight:700;font-size:34px;color:#3b1c05;line-height:1}
+.inner .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#4d2608;font-weight:700}
+.leaf{position:absolute;top:6px;bottom:6px;width:calc(50% - 6px);transition:transform 1.5s cubic-bezier(.22,.8,.2,1),filter .4s;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.18),transparent 18%,transparent 82%,rgba(0,0,0,.25)),
+    repeating-linear-gradient(180deg,transparent 0 22px,rgba(217,178,106,.10) 22px 23px),
+    linear-gradient(180deg,var(--tile) 0%,var(--tile-deep) 100%)}
+.leaf.l{left:6px;clip-path:var(--leafL);transform-origin:left center}
+.leaf.r{right:6px;clip-path:var(--leafR);transform-origin:right center}
+.leaf::before{content:"";position:absolute;left:18%;right:18%;top:46%;bottom:10%;border:1.5px solid rgba(217,178,106,.55);border-radius:3px;
+  background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(217,178,106,.12) 6px 7px),repeating-linear-gradient(-45deg,transparent 0 6px,rgba(217,178,106,.12) 6px 7px)}
+.leaf::after{content:"";position:absolute;width:44%;aspect-ratio:1;left:28%;top:28%;background:var(--gold);opacity:.85;
+  clip-path:polygon(50% 0,61% 26%,85% 15%,74% 39%,100% 50%,74% 61%,85% 85%,61% 74%,50% 100%,39% 74%,15% 85%,26% 61%,0 50%,26% 39%,15% 15%,39% 26%)}
+.knob{position:absolute;top:58%;width:7px;height:7px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff2c0,var(--gold-deep));box-shadow:0 1px 2px rgba(0,0,0,.5);z-index:2;transition:opacity .3s}
+.knob.l{right:calc(50% + 3px)} .knob.r{left:calc(50% + 3px)}
+.seam{position:absolute;left:calc(50% - .5px);top:22%;bottom:6px;width:1px;background:rgba(0,0,0,.45);z-index:2;transition:opacity .3s}
+.badge{position:absolute;left:50%;bottom:-11px;transform:translateX(-50%);min-width:34px;height:24px;padding:0 8px;border-radius:12px;z-index:3;
+  display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;
+  background:var(--night);color:var(--gold);border:1.5px solid var(--gold)}
+.door.locked .leaf{filter:saturate(.55) brightness(.62)}
+.door.locked .badge{color:var(--muted);border-color:rgba(211,189,165,.4)}
+.door.open .leaf.l{transform:rotateY(-108deg)}
+.door.open .leaf.r{transform:rotateY(108deg)}
+.door.open .knob,.door.open .seam{opacity:0}
+.door.open .badge{background:var(--gold);color:var(--night)}
+.door:not(.locked):hover .leaf.l{transform:rotateY(-14deg)}
+.door:not(.locked):hover .leaf.r{transform:rotateY(14deg)}
+.door.open:hover .leaf.l{transform:rotateY(-112deg)}
+.door.open:hover .leaf.r{transform:rotateY(112deg)}
+.meta{display:flex;flex-direction:column;align-items:center;margin-top:8px;line-height:1.25}
+.meta .d{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.meta .tag{font-size:12px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;font-weight:700;min-height:1.25em}
+.door.shake .art{animation:shake .45s}
+@keyframes shake{20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+
+/* sparkles */
+.spark{position:fixed;width:6px;height:6px;pointer-events:none;z-index:50;background:#fff3c4;border-radius:50%;
+  box-shadow:0 0 8px 2px rgba(244,190,90,.9);animation:spark 1s ease-out forwards}
+.spark.star{width:10px;height:10px;border-radius:0;background:var(--gold);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+@keyframes spark{0%{transform:translate(0,0) scale(1);opacity:1}100%{transform:translate(var(--x),var(--y)) scale(.2);opacity:0}}
+
+/* ---------- Controls ---------- */
+.controls{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:flex-end;justify-content:space-between;margin-top:56px;padding-top:22px;border-top:1px solid rgba(217,178,106,.18)}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.field input{font:inherit;font-size:16px;background:var(--night-2);color:var(--ink);border:1px solid rgba(217,178,106,.35);border-radius:10px;padding:8px 12px}
+.field input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.hint{font-size:14px;color:var(--muted);max-width:30em}
+.btn{font:inherit;font-weight:700;font-size:15px;border-radius:999px;padding:10px 18px;cursor:pointer;border:1.5px solid var(--gold);background:transparent;color:var(--gold)}
+.btn[aria-pressed="true"]{background:var(--gold);color:var(--night)}
+.btn:focus-visible{outline:2px solid #fff3cf;outline-offset:3px}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap}
+.btn.ghost{border-color:rgba(211,189,165,.4);color:var(--muted)}
+
+/* ---------- Toast ---------- */
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom, 0px));transform:translate(-50%,20px);opacity:0;z-index:60;
+  background:var(--night-3);color:var(--ink);border:1px solid var(--gold);border-radius:12px;padding:10px 16px;font-size:15px;transition:.3s;max-width:calc(100% - 32px);text-align:center;pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- Reading sheet ---------- */
+.sheet{position:fixed;inset:0;z-index:40;display:flex;align-items:center;justify-content:center;
+  padding:max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  background:rgba(26,5,8,.78);backdrop-filter:blur(4px)}
+.panel{position:relative;width:100%;max-width:660px;max-height:100%;overflow:auto;border-radius:26px 26px 16px 16px;
+  background:linear-gradient(180deg,var(--night-3),var(--night-2) 30%,var(--night));border:1.5px solid rgba(217,178,106,.45);
+  box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 60px rgba(244,163,64,.15);animation:rise .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes rise{from{transform:translateY(24px) scale(.97);opacity:0}}
+.panel-head{padding:30px 28px 10px;text-align:center;position:relative}
+.panel-head::before{content:"";display:block;width:84px;height:12px;margin:0 auto 14px;background:
+  radial-gradient(circle,var(--gold) 0 3px,transparent 3.5px) center/14px 12px repeat-x}
+.kind{display:inline-block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--night);background:var(--gold);border-radius:999px;padding:3px 12px}
+.panel h2{font-family:var(--display);font-size:clamp(28px,5vw,38px);line-height:1.1;margin:12px 0 4px;color:var(--ink);text-wrap:balance}
+.ref{color:var(--muted);font-size:15px}
+.panel-body{padding:10px 28px 22px;display:flex;flex-direction:column;gap:18px}
+.block h3{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 6px;font-weight:700}
+.block p{margin:0;max-width:62ch}
+.story p+p{margin-top:10px}
+.translit{font-style:italic;color:#d9d3c2}
+.arabic{direction:rtl;text-align:center;font-family:var(--arabic);font-size:clamp(24px,4.4vw,32px);line-height:2;color:#fff4d6;
+  padding:18px 18px;border-radius:14px;background:radial-gradient(ellipse at 50% 0,rgba(217,178,106,.14),transparent 70%),rgba(36,8,11,.6);border:1px solid rgba(217,178,106,.3)}
+.lesson{border-radius:14px;padding:14px 16px;background:linear-gradient(135deg,rgba(244,233,216,.09),rgba(217,178,106,.05));border:1px solid rgba(217,178,106,.4)}
+.lesson h3{color:#ecd3a0}
+.panel-foot{display:flex;justify-content:space-between;gap:10px;padding:14px 20px 20px;border-top:1px solid rgba(217,178,106,.15)}
+.close{position:absolute;z-index:3;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(217,178,106,.4);background:rgba(36,8,11,.6);color:var(--gold);font-size:22px;line-height:1;cursor:pointer}
+.close:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.btn:disabled{opacity:.35;cursor:default}
+
+/* ---------- extra decor ---------- */
+:root{--pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23f4e9d8' stroke-opacity='.13' stroke-width='1'%3E%3Crect x='17' y='17' width='22' height='22'/%3E%3Crect x='17' y='17' width='22' height='22' transform='rotate(45 28 28)'/%3E%3Ccircle cx='28' cy='28' r='5'/%3E%3Cpath d='M0 28h9M47 28h9M28 0v9M28 47v9M0 0l9 9M56 0l-9 9M0 56l9-9M56 56l-9-9'/%3E%3C/g%3E%3C/svg%3E")}
+.lantern.teal .glass{background:radial-gradient(circle at 50% 55%,#fffaf0 0 14%,#f3dcae 45%,#a8834a 100%);box-shadow:0 0 22px 8px rgba(243,220,174,.4)}
+.lantern.ruby .glass{background:radial-gradient(circle at 50% 55%,#ffe4dc 0 12%,#e0573f 42%,#6e1a12 100%);box-shadow:0 0 22px 8px rgba(224,87,63,.4)}
+.lantern.big .glass{width:40px;height:56px}
+.lantern.big .cap{width:30px;height:14px}
+.lantern.small .glass{width:22px;height:30px}
+.hang{position:absolute;top:-2px;transform-origin:top center;animation:sway 9s ease-in-out infinite}
+.hang .cord{width:1px;height:var(--h);margin:0 auto;background:rgba(217,178,106,.7)}
+.hang .star8{width:20px;height:20px;margin:-2px auto 0;background:var(--gold);filter:drop-shadow(0 0 6px rgba(217,178,106,.8));animation:glint 3s ease-in-out infinite;
+  clip-path:polygon(50% 0,61% 26%,85% 15%,74% 39%,100% 50%,74% 61%,85% 85%,61% 74%,50% 100%,39% 74%,15% 85%,26% 61%,0 50%,26% 39%,15% 15%,39% 26%)}
+.hang .cres{width:22px;height:22px;margin:-4px auto 0;border-radius:50%;box-shadow:6px -3px 0 0 var(--gold);transform:translateX(-4px) rotate(-20deg);filter:drop-shadow(0 0 6px rgba(217,178,106,.7))}
+@keyframes glint{0%,100%{opacity:.75;transform:scale(.92) rotate(0)}50%{opacity:1;transform:scale(1.08) rotate(20deg)}}
+.mahya-wrap{position:relative;margin-top:26px}
+#mahya{display:block;width:100%;height:88px}
+.skyline{margin-top:-6px}
+.band{height:18px;margin:18px auto 0;max-width:760px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27'%3E%3Crect width='27' height='27' fill='%23240709'/%3E%3Crect x='1.5' y='1.5' width='24' height='24' fill='none' stroke='%23f4e9d8' stroke-opacity='.45'/%3E%3Cpath d='M0 13.5L6.75 6.75L13.5 13.5L20.25 6.75L27 13.5L20.25 20.25L13.5 13.5L6.75 20.25Z' fill='%236a2227' stroke='%23d9b26a' stroke-width='1.2'/%3E%3Ccircle cx='13.5' cy='13.5' r='2' fill='%23f4e9d8'/%3E%3C/svg%3E") 0 0/18px 18px repeat-x;border-radius:2px}
+.status{background-image:var(--pattern),linear-gradient(180deg,var(--night-2),rgba(78,22,27,.6))}
+.hall{position:relative;margin-top:34px;padding:34px 22px 30px;border:18px solid transparent;border-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27'%3E%3Crect width='27' height='27' fill='%23240709'/%3E%3Crect x='1.5' y='1.5' width='24' height='24' fill='none' stroke='%23f4e9d8' stroke-opacity='.45'/%3E%3Cpath d='M0 13.5L6.75 6.75L13.5 13.5L20.25 6.75L27 13.5L20.25 20.25L13.5 13.5L6.75 20.25Z' fill='%236a2227' stroke='%23d9b26a' stroke-width='1.2'/%3E%3Ccircle cx='13.5' cy='13.5' r='2' fill='%23f4e9d8'/%3E%3C/svg%3E") 9 round;
+  background-image:var(--pattern),linear-gradient(180deg,rgba(78,22,27,.55),rgba(36,8,11,.35))}
+.hall::before,.hall::after{content:"";position:absolute;left:50%;transform:translateX(-50%);width:min(70%,420px);height:12px;
+  background:radial-gradient(circle at 6px 6px,var(--gold) 0 2px,transparent 2.5px) 0 0/18px 12px repeat-x}
+.hall::before{top:10px}.hall::after{bottom:10px}
+.hall .grid{margin-top:0}
+@media (min-width:821px){.hall .grid{grid-template-columns:repeat(6,1fr)}}
+.corner{display:none;position:absolute;width:46px;height:46px;border:2px solid rgba(217,178,106,.55);pointer-events:none}
+.corner::after{content:"";position:absolute;width:12px;height:12px;background:var(--gold);
+  clip-path:polygon(50% 0,61% 26%,85% 15%,74% 39%,100% 50%,74% 61%,85% 85%,61% 74%,50% 100%,39% 74%,15% 85%,26% 61%,0 50%,26% 39%,15% 15%,39% 26%)}
+.corner.tl{top:-1px;left:-1px;border-right:0;border-bottom:0;border-radius:30px 0 0 0}.corner.tl::after{top:8px;left:8px}
+.corner.tr{top:-1px;right:-1px;border-left:0;border-bottom:0;border-radius:0 30px 0 0}.corner.tr::after{top:8px;right:8px}
+.corner.bl{bottom:-1px;left:-1px;border-right:0;border-top:0;border-radius:0 0 0 30px}.corner.bl::after{bottom:8px;left:8px}
+.corner.br{bottom:-1px;right:-1px;border-left:0;border-top:0;border-radius:0 0 30px 0}.corner.br::after{bottom:8px;right:8px}
+.divider{display:flex;align-items:center;gap:14px;margin:64px 0 10px;color:var(--gold)}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(217,178,106,.6),transparent)}
+.divider span{width:18px;height:18px;background:var(--gold);clip-path:polygon(50% 0,61% 26%,85% 15%,74% 39%,100% 50%,74% 61%,85% 85%,61% 74%,50% 100%,39% 74%,15% 85%,26% 61%,0 50%,26% 39%,15% 15%,39% 26%)}
+
+/* ---------- Günün Amelleri ---------- */
+.amel-head{text-align:center;margin-bottom:26px}
+.amel-head .ar-greet{font-size:clamp(24px,4.5vw,32px)}
+.amel-head h2{font-family:var(--display);font-size:clamp(32px,6vw,50px);margin:2px 0 6px;color:var(--gold);text-wrap:balance}
+.amel-head p{color:var(--muted);margin:0 auto;max-width:36em}
+.amel{display:grid;grid-template-columns:1.15fr 1fr;gap:20px}
+.card{position:relative;min-width:0;border-radius:22px;padding:22px;border:1px solid rgba(217,178,106,.28);
+  background-image:var(--pattern),linear-gradient(170deg,var(--night-3),var(--night-2) 45%,var(--night))}
+.card h3{font-family:var(--display);font-size:24px;margin:0 0 4px;color:var(--ink)}
+.card .sub{color:var(--muted);font-size:15px;margin:0 0 14px}
+.card.zikir{grid-row:span 2;display:flex;flex-direction:column}
+.card.hatim{grid-column:1/-1}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-size:14px;font-weight:700;padding:6px 12px;border-radius:999px;border:1px solid rgba(217,178,106,.35);background:rgba(36,8,11,.5);color:var(--muted);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--gold);color:var(--night);border-color:var(--gold)}
+.chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.tesbih{position:relative;width:min(100%,290px);aspect-ratio:1;margin:4px auto 10px;border-radius:50%;border:0;padding:0;background:none;cursor:pointer;color:inherit;font:inherit;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.tesbih svg{position:absolute;inset:0;width:100%;height:100%}
+.tesbih .face{position:absolute;inset:16%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+  background:radial-gradient(circle at 40% 30%,#7c2a30,var(--night-2) 55%,var(--night));box-shadow:inset 0 0 0 1px rgba(217,178,106,.35),0 0 40px rgba(244,163,64,.18);transition:transform .08s}
+.tesbih:active .face{transform:scale(.97)}
+.tesbih:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.tesbih .cnt{font-family:var(--display);font-weight:700;font-size:clamp(46px,10vw,64px);line-height:1;color:var(--gold);font-variant-numeric:tabular-nums}
+.tesbih .of{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tesbih .tap{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.bead{fill:rgba(211,189,165,.22);transition:fill .2s}
+.bead.on{fill:var(--gold)}
+.bead.imame{fill:var(--ember)}
+.zk-ar{font-family:var(--arabic);direction:rtl;text-align:center;font-size:clamp(26px,5vw,34px);color:#fff4d6;line-height:1.6}
+.zk-tr{text-align:center;color:var(--ink)}
+.zk-ok{text-align:center;color:var(--muted);font-style:italic;font-size:15px}
+.zk-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:14px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.zk-foot b{color:var(--gold)}
+.tasks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.task{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-radius:14px;background:rgba(36,8,11,.45);border:1px solid rgba(217,178,106,.15);cursor:pointer}
+.task input{appearance:none;-webkit-appearance:none;flex:none;width:24px;height:24px;margin:0;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;cursor:pointer;background:transparent}
+.task input:checked{background:var(--gold)}
+.task input:checked::after{content:"";width:6px;height:11px;border:solid var(--night);border-width:0 2.5px 2.5px 0;transform:translateY(-1px) rotate(45deg)}
+.task input:focus-visible{outline:2px solid #fff3cf;outline-offset:2px}
+.task span{min-width:0}
+.task.done span{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(217,178,106,.6)}
+.task-note{margin:12px 0 0;font-size:14px;color:var(--muted)}
+.esma{text-align:center}
+.esma .big{font-family:var(--arabic);font-size:clamp(46px,9vw,64px);line-height:1.4;color:var(--gold);text-shadow:0 0 24px rgba(217,178,106,.35);margin:4px 0 0}
+.esma .nm{font-family:var(--display);font-size:26px;margin:0}
+.esma .mn{color:var(--ink);margin:6px auto 0;max-width:28em}
+.esma .ix{color:var(--muted);font-size:14px;margin-top:8px}
+.cuz{display:grid;grid-template-columns:repeat(15,1fr);gap:8px;margin-top:6px}
+.cuz button{font:inherit;font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;aspect-ratio:1;border-radius:10px;cursor:pointer;
+  border:1px solid rgba(217,178,106,.35);background:rgba(36,8,11,.5);color:var(--muted)}
+.cuz button[aria-pressed="true"]{background:linear-gradient(160deg,#f3dcae,var(--gold) 50%,var(--gold-deep));color:var(--night);border-color:var(--gold)}
+.cuz button:focus-visible{outline:2px solid #fff3cf;outline-offset:2px}
+.hatim-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.hatim-top .pct{font-family:var(--display);font-size:22px;color:var(--gold);font-variant-numeric:tabular-nums}
+.hbar{height:8px;border-radius:4px;background:rgba(211,189,165,.18);margin:10px 0 14px;overflow:hidden}
+.hbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold-deep),var(--gold));transition:width .4s}
+
+/* ---------- Library ---------- */
+.btn-lib{display:inline-flex;align-items:center;gap:14px;margin-top:22px;padding:12px 20px 12px 14px;border-radius:999px;text-decoration:none;color:var(--night);
+  background:linear-gradient(160deg,#f3dcae,var(--gold) 45%,var(--gold-deep));box-shadow:0 0 0 4px rgba(217,178,106,.15),0 10px 30px rgba(244,163,64,.3);transition:transform .2s,box-shadow .2s}
+.btn-lib:hover{transform:translateY(-2px);box-shadow:0 0 0 6px rgba(217,178,106,.2),0 14px 36px rgba(244,163,64,.4)}
+.btn-lib:focus-visible{outline:2px solid #fff3cf;outline-offset:4px}
+.btn-lib b{display:block;font-family:var(--display);font-size:20px;line-height:1.1}
+.btn-lib small{display:block;font-size:13px;font-weight:700;opacity:.75;text-align:left}
+.btn-lib > span:nth-child(2){text-align:left}
+.bl-star{width:30px;height:30px;background:var(--night);flex:none;
+  clip-path:polygon(50% 0,61% 26%,85% 15%,74% 39%,100% 50%,74% 61%,85% 85%,61% 74%,50% 100%,39% 74%,15% 85%,26% 61%,0 50%,26% 39%,15% 15%,39% 26%)}
+.bl-arrow{font-size:28px;line-height:1;font-weight:700}
+.lib-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:18px 0}
+.back{color:var(--gold);text-decoration:none;font-weight:700;font-size:16px;border:1px solid rgba(217,178,106,.4);border-radius:999px;padding:8px 16px;background:rgba(36,8,11,.6)}
+.back:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.lib-read{color:var(--muted);font-size:15px;font-variant-numeric:tabular-nums}
+.lib-hero{text-align:center;padding-block:26px 8px}
+.lib-ayah{color:var(--muted);font-size:15px;margin:0 0 8px}
+.lib-tools{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:flex-end;justify-content:space-between;margin:26px 0 22px}
+.lib-tools .chips{margin:0}
+.lib-search{flex:0 1 280px}
+.lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.story-card{position:relative;display:flex;flex-direction:column;gap:6px;text-align:left;font:inherit;color:inherit;cursor:pointer;min-width:0;
+  padding:30px 20px 20px;border:1px solid rgba(217,178,106,.32);border-radius:140px 140px 18px 18px / 80px 80px 18px 18px;
+  background-image:var(--pattern),linear-gradient(175deg,var(--night-3),var(--night-2) 50%,var(--night));transition:transform .25s,border-color .25s,box-shadow .25s}
+.story-card::before{content:"";position:absolute;top:10px;left:50%;width:14px;height:14px;margin-left:-7px;background:var(--gold);
+  clip-path:polygon(50% 0,61% 26%,85% 15%,74% 39%,100% 50%,74% 61%,85% 85%,61% 74%,50% 100%,39% 74%,15% 85%,26% 61%,0 50%,26% 39%,15% 15%,39% 26%)}
+.story-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 14px 40px rgba(0,0,0,.35),0 0 30px rgba(244,163,64,.15)}
+.story-card:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.story-card .cat{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700;text-align:center;margin-top:4px}
+.story-card h3{font-family:var(--display);font-size:23px;line-height:1.15;margin:2px 0 0;text-align:center;text-wrap:balance}
+.story-card .ref{text-align:center;font-size:14px}
+.story-card .teaser{color:#d2d4e4;font-size:15px;margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.story-card .go{margin-top:auto;padding-top:10px;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:700;color:var(--gold)}
+.story-card .seen{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#ecd3a0}
+.lib-empty{text-align:center;color:var(--muted);margin:30px 0}
+
+/* ---------- mosque ---------- */
+.mosque{display:block;width:min(100%,780px);margin:26px auto 0;background:none;border:0;padding:0;cursor:pointer;color:inherit;font:inherit;-webkit-tap-highlight-color:transparent}
+.mosque svg{display:block;width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5))}
+.mosque:focus-visible{outline:2px solid var(--gold);outline-offset:6px;border-radius:12px}
+.leaf-m{transform-box:fill-box;transition:transform 1.5s cubic-bezier(.22,.8,.2,1)}
+.leaf-m.l{transform-origin:left center}.leaf-m.r{transform-origin:right center}
+.mosque:hover .leaf-m{transform:scaleX(.82)}
+.mosque.open .leaf-m,.mosque.open:hover .leaf-m{transform:scaleX(.06)}
+.win{animation:winglow 3.2s ease-in-out infinite}
+@keyframes winglow{50%{opacity:.65}}
+.m-light,.m-aura{transition:filter 1s,opacity 1s}
+.mosque.open .m-light{filter:brightness(1.35)}
+.mosque.open .m-aura{opacity:.5}
+.m-hint{display:inline-block;margin-top:16px;padding:9px 20px;border-radius:999px;border:1px solid var(--gold);color:var(--gold);font-weight:700;font-size:15px;letter-spacing:.04em;background:rgba(36,8,11,.5);animation:hintpulse 2.4s ease-in-out infinite}
+@keyframes hintpulse{50%{box-shadow:0 0 0 7px rgba(217,178,106,.16)}}
+#doorsArea{scroll-margin-top:16px}
+#doorsArea.reveal{animation:revealDoors 1.1s cubic-bezier(.2,.8,.2,1)}
+@keyframes revealDoors{from{opacity:0;transform:translateY(40px) scale(.97)}}
+.inner .n,.status-main,.btn-lib b,.story-card h3,.card h3,.panel h2{letter-spacing:.02em}
+.inner .n{font-weight:700}
+
+/* ---------- interior ---------- */
+.cami-nav{position:relative;z-index:2}
+.interior{position:relative;width:100vw;margin-left:calc(50% - 50vw);height:min(520px,62vw);min-height:340px;margin-top:-58px}
+.interior svg{display:block;width:100%;height:100%}
+.interior::after{content:"";position:absolute;inset:auto 0 0 0;height:90px;background:linear-gradient(transparent,var(--night))}
+.cami-head{text-align:center;margin-top:-40px;position:relative}
+.cami-head .eyebrow{display:block;margin-bottom:4px}
+.avize-lamp{animation:lampflick 3.4s ease-in-out infinite}
+#flash{position:fixed;inset:0;z-index:80;pointer-events:none;opacity:0;background:radial-gradient(circle at 50% 70%,#fffaf0 0,#f6d08a 35%,#c9772a 75%,#5a1a10 100%);transition:opacity 1s ease}
+#flash.on{opacity:1}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:70;pointer-events:none}
+.mosque svg{transition:transform 1.3s cubic-bezier(.6,0,.4,1),filter 1.3s}
+.mosque.zoom svg{transform:scale(7);transform-origin:50% 86%;filter:brightness(1.4) drop-shadow(0 0 0 transparent)}
+#camiView.reveal .door{animation:doorIn .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i) * 40ms + .25s)}
+#camiView.reveal .status{animation:doorIn .7s both}
+@keyframes doorIn{from{opacity:0;transform:translateY(22px) scale(.9)}}
+
+/* special doors */
+.door.kadir .leaf{background:
+  radial-gradient(circle at 30% 20%,#fff 0 1px,transparent 1.6px),radial-gradient(circle at 70% 35%,#fff 0 1px,transparent 1.6px),
+  radial-gradient(circle at 45% 60%,#f3dcae 0 1.2px,transparent 1.8px),radial-gradient(circle at 20% 78%,#fff 0 .9px,transparent 1.5px),
+  radial-gradient(circle at 80% 85%,#f3dcae 0 1px,transparent 1.6px),
+  linear-gradient(180deg,#1d2350 0%,#0d1030 100%)}
+.door.kadir .halo{opacity:1;background:radial-gradient(closest-side,rgba(180,190,255,.45),transparent);animation:pulse 3.4s ease-in-out infinite}
+.door.kadir .inner{background:radial-gradient(ellipse at 50% 70%,#ffffff 0,#cfd6ff 22%,#4a4f9a 60%,#0d1030 100%)}
+.door.kadir .inner .n,.door.kadir .inner .k{color:#0d1030}
+.door.bayram .leaf{background:
+  repeating-linear-gradient(45deg,transparent 0 7px,rgba(255,255,255,.18) 7px 8px),repeating-linear-gradient(-45deg,transparent 0 7px,rgba(255,255,255,.18) 7px 8px),
+  linear-gradient(180deg,#f3dcae 0%,#d9b26a 50%,#9a7233 100%)}
+.door.bayram .leaf::after{background:#7a1f22}
+.door.bayram .leaf::before{border-color:rgba(122,31,34,.6)}
+.door.bayram .halo{opacity:1;background:radial-gradient(closest-side,rgba(255,215,120,.7),transparent);animation:pulse 2.2s ease-in-out infinite}
+.door.bayram .badge{background:#7a1f22;color:#f3dcae;border-color:#f3dcae}
+.door.locked.kadir .leaf,.door.locked.bayram .leaf{filter:saturate(.8) brightness(.8)}
+
+/* special sheets */
+.panel.kadir{background:radial-gradient(circle at 15% 8%,rgba(255,255,255,.5) 0 1px,transparent 2px),radial-gradient(circle at 80% 12%,rgba(255,255,255,.5) 0 1px,transparent 2px),radial-gradient(circle at 60% 4%,rgba(243,220,174,.6) 0 1.2px,transparent 2px),
+  linear-gradient(180deg,#1d2350 0,#2a1440 140px,var(--night-2) 360px,var(--night));border-color:rgba(200,205,255,.5)}
+.panel.bayram{border:2px solid var(--gold);box-shadow:0 0 0 6px rgba(217,178,106,.18),0 30px 80px rgba(0,0,0,.6),0 0 80px rgba(240,182,90,.35)}
+.bayram-hero{text-align:center;padding:20px 16px;border-radius:16px;background:linear-gradient(160deg,#f3dcae,#d9b26a 55%,#9a7233);color:#3a0d12}
+.bayram-hero .ab{font-family:var(--arabic);font-size:clamp(34px,7vw,48px);line-height:1.4;margin:0}
+.bayram-hero .bt{font-family:var(--display);font-weight:700;font-size:clamp(26px,5vw,34px);letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px}
+.bayram-hero p{margin:0 auto;max-width:34em}
+.special{border-radius:14px;padding:14px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(217,178,106,.35)}
+.plan{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.plan li{display:flex;gap:10px;align-items:flex-start}
+.plan input{appearance:none;-webkit-appearance:none;flex:none;width:22px;height:22px;margin:1px 0 0;border-radius:6px;border:2px solid var(--gold);display:grid;place-items:center;cursor:pointer}
+.plan input:checked{background:var(--gold)}
+.plan input:checked::after{content:"";width:5px;height:10px;border:solid var(--night);border-width:0 2.5px 2.5px 0;transform:translateY(-1px) rotate(45deg)}
+.plan input:focus-visible{outline:2px solid #fff3cf;outline-offset:2px}
+.plan li:has(input:checked) label{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(217,178,106,.6)}
+.kz-list{display:flex;flex-direction:column;gap:10px}
+.kz{display:grid;grid-template-columns:1fr auto;gap:4px 14px;align-items:center;width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer;
+  padding:12px 14px;border-radius:14px;border:1px solid rgba(217,178,106,.35);background:rgba(36,8,11,.45);-webkit-tap-highlight-color:transparent}
+.kz:active{transform:scale(.99)}
+.kz:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.kz .a{grid-column:1/-1;font-family:var(--arabic);direction:rtl;font-size:clamp(20px,4vw,26px);line-height:1.7;color:#fff4d6;text-align:right}
+.kz .o{font-style:italic;color:#e5dccb;font-size:15px;min-width:0}
+.kz .m{grid-column:1;color:var(--muted);font-size:14px;min-width:0}
+.kz .c{grid-row:2/4;grid-column:2;font-family:var(--display);font-weight:700;font-size:22px;color:var(--gold);font-variant-numeric:tabular-nums;white-space:nowrap}
+.kz.done{border-color:var(--gold);background:rgba(217,178,106,.14)}
+
+/* parchment story cards */
+.story-card{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%239a2f2a' stroke-opacity='.08'%3E%3Crect x='17' y='17' width='22' height='22'/%3E%3Crect x='17' y='17' width='22' height='22' transform='rotate(45 28 28)'/%3E%3C/g%3E%3C/svg%3E"),linear-gradient(175deg,#fbf3e4,#efe0c4 60%,#e4cfa8);
+  border:2px solid #c9a35c;color:#3a0d12;box-shadow:0 10px 26px rgba(0,0,0,.35),inset 0 0 0 5px #fbf3e4,inset 0 0 0 6.5px rgba(154,47,42,.35)}
+.story-card::before{background:#9a2f2a}
+.story-card .cat{color:#9a2f2a}
+.story-card h3{color:#3a0d12}
+.story-card .ref{color:#7a5a3a}
+.story-card .teaser{color:#4a2a20}
+.story-card .go{color:#9a2f2a}
+.story-card .seen{color:#2f6b4f}
+.story-card:hover{border-color:#9a2f2a;box-shadow:0 16px 40px rgba(0,0,0,.45),0 0 30px rgba(240,182,90,.25),inset 0 0 0 5px #fbf3e4,inset 0 0 0 6.5px rgba(154,47,42,.5)}
+.story-card:focus-visible{outline-color:#f3dcae}
+
+@media (max-width:820px){
+  .amel{grid-template-columns:1fr}
+  .card.zikir{grid-row:auto}
+  .cuz{grid-template-columns:repeat(10,1fr)}
+}
+@media (max-width:560px){
+  .grid{grid-template-columns:repeat(3,1fr);gap:26px 12px}
+  .hall{padding:30px 12px 26px}
+  .cuz{grid-template-columns:repeat(6,1fr)}
+  .hang.wide{display:none}
+  #mahya{height:110px}
+  .inner .n{font-size:26px}
+  .lantern.wide{display:none}
+  .lanterns{height:230px;margin-bottom:4px}
+  .panel-head{padding:28px 18px 8px}.panel-body{padding:8px 18px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+   .avize-lamp,.swing,.lampglow,.lantern,.lantern .glass,.door.today .halo,.hang,.hang .star8,.win,.m-hint{animation:none}
+  .leaf-m{transition-duration:.3s}
+  .leaf{transition-duration:.25s}
+  .panel{animation:none}
+}
+</style>
+</head>
+<body>
+
+
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="wrap" id="calView">
+  <header>
+    <div class="lanterns" aria-hidden="true"><svg id="lampScene" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMin slice"></svg></div>
+    <p class="ar-greet" lang="ar">رَمَضَانُ كَرِيمٌ</p>
+    <h1>Ramazan Kapıları</h1>
+    <p class="lede">Ramazan'ın her günü yeni bir kapı açılır. Arkasında bir sure, bir dua ya da peygamberlerden kısa bir hikâye seni bekliyor.</p>
+    <button class="mosque" id="mosque" type="button" aria-label="Camiye gir ve Ramazan kapılarını göster">
+      <svg id="mosqueSvg" viewBox="0 0 800 460" aria-hidden="true"></svg>
+      <span class="m-hint" id="mHint">Kapıları görmek için camiye dokun</span>
+    </button>
+    <div class="band" aria-hidden="true"></div>
+    <a class="btn-lib" href="#hikayeler"><span class="bl-star" aria-hidden="true"></span><span><b>Hikâye Kütüphanesi</b><small id="libCount">İslami hikâyeler</small></span><span class="bl-arrow" aria-hidden="true">›</span></a>
+  </header>
+
+
+  <div class="divider" aria-hidden="true"><span></span></div>
+
+  <section aria-labelledby="amelTitle">
+    <div class="amel-head">
+      <p class="ar-greet" lang="ar">وَاذْكُرُوا اللَّهَ كَثِيرًا</p>
+      <h2 id="amelTitle">Günün Amelleri</h2>
+      <p>Kapılardan bağımsız olarak her gün yapabileceğin küçük ibadetler. "Allah'ı çok zikredin." (Cuma Suresi, 10)</p>
+    </div>
+    <div class="amel">
+      <div class="card zikir">
+        <span class="eyebrow">Tesbih</span>
+        <h3>Zikir çek</h3>
+        <p class="sub">Bir zikir seç ve tesbihe dokun. Boşluk tuşu da sayar.</p>
+        <div class="chips" id="zkChips" role="group" aria-label="Zikir seç"></div>
+        <button class="tesbih" id="tesbih" type="button" aria-label="Zikir say">
+          <svg viewBox="0 0 200 200" aria-hidden="true"><g id="beadRing"></g></svg>
+          <span class="face"><span class="cnt" id="zkCount">0</span><span class="of" id="zkOf">/ 33</span><span class="tap">dokun</span></span>
+        </button>
+        <div class="zk-ar" id="zkAr" lang="ar"></div>
+        <div class="zk-ok" id="zkOk"></div>
+        <div class="zk-tr" id="zkTr"></div>
+        <div class="zk-foot">
+          <span>Bugün toplam: <b id="zkTotal">0</b> zikir · <span id="zkRounds">0</span> tur</span>
+          <button class="btn ghost" id="zkReset" type="button">Sıfırla</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="eyebrow" id="taskDate">Bugün</span>
+        <h3>Bugün bunları yap</h3>
+        <p class="sub">Her gün yeni dört küçük iyilik. Yaptıklarını işaretle.</p>
+        <ul class="tasks" id="tasks"></ul>
+        <p class="task-note" id="taskNote"></p>
+      </div>
+
+      <div class="card esma">
+        <span class="eyebrow">Günün Esmâsı · Esmâü'l-Hüsnâ</span>
+        <p class="big" id="esAr" lang="ar"></p>
+        <p class="nm" id="esNm"></p>
+        <p class="mn" id="esMn"></p>
+        <p class="ix">Bugün bu ismi 33 kez "Yâ <span id="esCall"></span>" diye an.</p>
+      </div>
+
+      <div class="card hatim">
+        <div class="hatim-top">
+          <div><span class="eyebrow">Hatim takibi</span><h3>Ramazan'da Kur'an'ı bitir</h3></div>
+          <span class="pct" id="hatimPct">0 / 30 cüz</span>
+        </div>
+        <div class="hbar"><i id="hatimBar"></i></div>
+        <p class="sub">Günde bir cüz okursan Ramazan sonunda bir hatim indirmiş olursun. Okuduğun cüze dokun.</p>
+        <div class="cuz" id="cuz" role="group" aria-label="Cüzler"></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="wrap" id="camiView" hidden lang="tr">
+  <nav class="lib-nav cami-nav"><a class="back" href="#">‹ Camiden çık</a><span class="lib-read">Caminin içindesin</span></nav>
+  <div class="interior" aria-hidden="true"><svg id="camiSvg" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMax slice"></svg></div>
+  <header class="cami-head">
+    <p class="eyebrow">Hoş geldin · Caminin içindesin</p>
+    <h1>Ramazan Kapıları</h1>
+    <p class="lede">Ramazan'ın her günü bir kapı açılır. Bugünün kapısı parlıyor.</p>
+  </header>
+  <section class="status" aria-live="polite">
+    <div style="min-width:0">
+      <div class="status-main" id="statusMain">…</div>
+      <div class="status-sub" id="statusSub"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-label" id="progressLabel">0 / 30 kapı açıldı</div>
+      <div class="beads" id="beads" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <div class="hall">
+    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    <main class="grid" id="grid" aria-label="Ramazan takvimi, 30 kapı"></main>
+  </div>
+
+  <section class="controls">
+    <div class="field">
+      <label for="startDate">Ramazan'ın 1. günü</label>
+      <input type="date" id="startDate">
+      <span class="hint">Ramazan 1448 için beklenen başlangıç 8 Şubat 2027'dir. Diyanet takvimi bir gün farklıysa tarihi buradan değiştirebilirsin.</span>
+    </div>
+    <div class="btn-row">
+      <button class="btn" id="previewBtn" type="button" aria-pressed="false">Önizleme: tüm kapıları aç</button>
+      <button class="btn ghost" id="resetBtn" type="button">Kapıları kapat</button>
+    </div>
+  </section>
+</div>
+
+<div class="wrap" id="libView" hidden>
+  <nav class="lib-nav"><a class="back" href="#">‹ Takvime dön</a><span class="lib-read" id="libRead"></span></nav>
+  <header class="lib-hero">
+    <div class="moon" aria-hidden="true"></div>
+    <p class="ar-greet" lang="ar">نَحْنُ نَقُصُّ عَلَيْكَ أَحْسَنَ الْقَصَصِ</p>
+    <p class="lib-ayah">"Biz sana kıssaların en güzelini anlatıyoruz." · Yûsuf Suresi, 3</p>
+    <h1>Hikâye Kütüphanesi</h1>
+    <p class="lede">Peygamberlerin, Peygamberimizin ve sahabelerin hayatından, Kur'an kıssalarından ve hadislerden öğretici hikâyeler.</p>
+    <div class="band" aria-hidden="true"></div>
+  </header>
+  <div class="lib-tools">
+    <div class="chips" id="libCats" role="group" aria-label="Kategori seç"></div>
+    <div class="field lib-search"><label for="libQ">Hikâye ara</label><input type="search" id="libQ" placeholder="ör. Yusuf, sabır, Kâbe"></div>
+  </div>
+  <div class="lib-grid" id="libGrid"></div>
+  <p class="lib-empty" id="libEmpty" hidden>Bu aramaya uygun hikâye bulunamadı. Başka bir kelime dene ya da "Hepsi" kategorisini seç.</p>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<div id="flash" aria-hidden="true"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<div class="sheet" id="sheet" hidden>
+  <article class="panel" role="dialog" aria-modal="true" aria-labelledby="pTitle">
+    <button class="close" id="closeBtn" type="button" aria-label="Kapat">×</button>
+    <div class="panel-head">
+      <span class="kind" id="pKind"></span>
+      <h2 id="pTitle"></h2>
+      <div class="ref" id="pRef"></div>
+    </div>
+    <div class="panel-body" id="pBody"></div>
+    <div class="panel-foot">
+      <button class="btn ghost" id="prevBtn" type="button">‹ Önceki gün</button>
+      <button class="btn ghost" id="nextBtn" type="button">Sonraki gün ›</button>
+    </div>
+  </article>
+</div>
+
+<script>
+const DAYS = [
+ {k:"Ayet", t:`Oruç Ayeti`, r:`Bakara Suresi, 183. ayet`,
+  tr:`Ey iman edenler! Oruç, sizden öncekilere farz kılındığı gibi size de farz kılındı. Umulur ki sakınırsınız.`,
+  ok:`Yâ eyyühellezîne âmenû kütibe aleykümüs-sıyâmü kemâ kütibe alellezîne min kablikum leallekum tettekûn.`,
+  ar:`يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ`,
+  d:`Oruç sadece aç kalmak değildir. Amacı takvadır: Allah'ı her an hatırlamak ve kötülükten sakınmak. Bugün dilini de oruçlu tutmaya çalış.`},
+ {k:"Sure", t:`Fâtiha Suresi`, r:`Kur'an'ın 1. suresi · 7 ayet`,
+  tr:`Rahmân ve Rahîm olan Allah'ın adıyla. Hamd, âlemlerin Rabbi Allah'a mahsustur. O, Rahmân'dır, Rahîm'dir. Din gününün sahibidir. Yalnız sana kulluk eder, yalnız senden yardım dileriz. Bizi doğru yola ilet; nimet verdiklerinin yoluna. Gazaba uğrayanların ve sapıtanların yoluna değil.`,
+  ok:`Bismillâhirrahmânirrahîm. Elhamdü lillâhi rabbil-âlemîn. Errahmânirrahîm. Mâliki yevmiddîn. İyyâke na'büdü ve iyyâke neste'în. İhdinas-sırâtal-müstakîm. Sırâtallezîne en'amte aleyhim ğayril-mağdûbi aleyhim veled-dâllîn.`,
+  ar:`بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ`,
+  d:`Fâtiha her namazın her rekâtında okunur. Bu yüzden ona "Ümmü'l-Kitâb", yani Kitabın Anası denir.`},
+ {k:"Dua", t:`İftar Duası`, r:`Ebû Dâvûd, Savm 22`,
+  tr:`Allah'ım! Senin rızan için oruç tuttum, sana inandım, sana güvendim ve senin verdiğin rızıkla orucumu açtım.`,
+  ok:`Allâhümme leke sumtü ve bike âmentü ve aleyke tevekkeltü ve alâ rızkıke eftartü.`,
+  ar:`اللَّهُمَّ لَكَ صُمْتُ وَبِكَ آمَنْتُ وَعَلَيْكَ تَوَكَّلْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ`,
+  d:`Peygamberimiz, oruçlunun iftar vaktindeki duasının geri çevrilmediğini haber vermiştir. Ezandan önce bir dakikanı duaya ayır.`},
+ {k:"Hikaye", t:`Hira'da İlk Vahiy`, r:`Alak Suresi, 1. ayet`,
+  s:[`Hz. Muhammed (s.a.v.) kırk yaşındayken Mekke yakınındaki Nur Dağı'na çıkar, Hira Mağarası'nda günlerce tefekkür ederdi.`,
+     `Ramazan ayının bir gecesinde Cebrail (a.s.) geldi ve "Oku!" dedi. Peygamberimiz "Ben okuma bilmem" diye cevap verdi. Bu üç kez tekrarlandı. Sonra Cebrail Kur'an'ın ilk ayetlerini getirdi: "Yaratan Rabbinin adıyla oku!"`,
+     `Peygamberimiz heyecanla evine döndü. Hz. Hatice onu örttü, teselli etti ve ona ilk inanan kişi oldu. Böylece Kur'an'ın inişi Ramazan ayında başladı.`],
+  ar:`اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ`, art:`Yaratan Rabbinin adıyla oku!`,
+  d:`Kur'an'ın ilk emri "Oku!" oldu. İslam'da ilim öğrenmek bir ibadettir. Bugün birkaç ayeti anlamıyla birlikte oku.`},
+ {k:"Sure", t:`İhlâs Suresi`, r:`Kur'an'ın 112. suresi · 4 ayet`,
+  tr:`De ki: O Allah birdir. Allah Samed'dir; hiçbir şeye muhtaç değildir, her şey O'na muhtaçtır. O doğurmamış ve doğmamıştır. Hiçbir şey O'na denk değildir.`,
+  ok:`Kul hüvallâhü ehad. Allâhüs-samed. Lem yelid ve lem yûled. Ve lem yekün lehû küfüven ehad.`,
+  ar:`قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ`,
+  d:`Peygamberimiz İhlâs Suresi'nin Kur'an'ın üçte birine denk olduğunu söylemiştir (Buhârî). Çünkü tevhidi, yani Allah'ın birliğini özetler.`},
+ {k:"Dua", t:`Dünya ve Ahiret Duası`, r:`Bakara Suresi, 201. ayet`,
+  tr:`Rabbimiz! Bize dünyada da iyilik ver, ahirette de iyilik ver ve bizi ateş azabından koru.`,
+  ok:`Rabbenâ âtinâ fid-dünyâ haseneten ve fil-âhirati haseneten ve kınâ azâben-nâr.`,
+  ar:`رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ`,
+  d:`Bu, Peygamberimizin en çok yaptığı dualardan biridir (Buhârî). Hem dünyayı hem ahireti birlikte istemeyi öğretir.`},
+ {k:"Hikaye", t:`Hz. Nuh'un Gemisi`, r:`Hûd Suresi, 41. ayet`,
+  s:[`Hz. Nuh (a.s.) kavmini yüzyıllar boyunca Allah'a inanmaya çağırdı, ama çok azı iman etti.`,
+     `Allah ona büyük bir gemi yapmasını emretti. İnsanlar denizden uzakta gemi yapan Nuh'la alay ettiler. O ise sabırla çalışmaya devam etti.`,
+     `Sonunda gökten yağmur boşaldı, yerden sular fışkırdı. Nuh, iman edenleri ve her hayvandan birer çifti gemiye aldı. Gemi Allah'ın izniyle dev dalgaların arasında yüzdü ve Cûdî Dağı'na oturdu.`],
+  ar:`وَقَالَ ارْكَبُوا فِيهَا بِسْمِ اللَّهِ مَجْرَاهَا وَمُرْسَاهَا ۚ إِنَّ رَبِّي لَغَفُورٌ رَّحِيمٌ`, art:`Nuh dedi ki: Binin ona! Onun yüzüşü de duruşu da Allah'ın adıyladır. Şüphesiz Rabbim çok bağışlayıcı, çok merhametlidir.`,
+  d:`İnsanlar alay etse bile doğru olanı yapmaya devam et. Sabır, en büyük güçlerden biridir.`},
+ {k:"Sure", t:`Asr Suresi`, r:`Kur'an'ın 103. suresi · 3 ayet`,
+  tr:`Asra (zamana) yemin olsun ki insan gerçekten ziyandadır. Ancak iman edenler, salih ameller işleyenler, birbirlerine hakkı ve sabrı tavsiye edenler bunun dışındadır.`,
+  ok:`Vel-asr. İnnel-insâne lefî husr. İllellezîne âmenû ve amilüs-sâlihâti ve tevâsav bil-hakkı ve tevâsav bis-sabr.`,
+  ar:`وَالْعَصْرِ ۝ إِنَّ الْإِنسَانَ لَفِي خُسْرٍ ۝ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ`,
+  d:`Zaman en değerli sermayemizdir. İmam Şâfiî, "İnsanlara sadece bu sure inseydi, onlara yeterdi" demiştir.`},
+ {k:"Dua", t:`İlim Duası`, r:`Tâhâ Suresi, 114. ayet`,
+  tr:`Rabbim! İlmimi artır.`,
+  ok:`Rabbi zidnî ilmâ.`,
+  ar:`رَبِّ زِدْنِي عِلْمًا`,
+  d:`Allah, Peygamberine bile "İlmimi artır" diye dua etmesini öğretti. Öğrenmenin sonu yoktur. Derse veya kitaba başlamadan önce bu kısa duayı oku.`},
+ {k:"Hikaye", t:`Balığın Karnında Hz. Yunus`, r:`Enbiyâ Suresi, 87. ayet`,
+  s:[`Hz. Yunus (a.s.) kendisini dinlemeyen kavmine kızdı ve Allah'ın izni gelmeden şehri terk etti. Bir gemiye bindi.`,
+     `Denizde fırtına koptu. Kura çekildi ve Yunus denize atıldı. Büyük bir balık onu yuttu.`,
+     `Balığın karnının, denizin ve gecenin karanlığında Yunus hatasını anladı ve Allah'a içten dua etti. Allah duasını kabul etti; balık onu sağ salim sahile bıraktı. Kavmi de bu arada tövbe edip iman etmişti.`],
+  ar:`لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ`, art:`Senden başka ilah yoktur. Seni tüm eksikliklerden tenzih ederim. Gerçekten ben kendine zulmedenlerden oldum.`,
+  d:`Ne kadar karanlıkta olursan ol, samimi bir dua ve tövbe ile Allah'a dönebilirsin. Bu duaya "Yunus duası" denir.`},
+ {k:"Sure", t:`Kevser Suresi`, r:`Kur'an'ın 108. suresi · 3 ayet`,
+  tr:`Şüphesiz biz sana Kevser'i verdik. Öyleyse Rabbin için namaz kıl ve kurban kes. Asıl soyu kesik olan, sana kin besleyendir.`,
+  ok:`İnnâ a'taynâkel-kevser. Fesalli li rabbike venhar. İnne şânieke hüvel-ebter.`,
+  ar:`إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ ۝ فَصَلِّ لِرَبِّكَ وَانْحَرْ ۝ إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ`,
+  d:`Kur'an'ın en kısa suresidir. Oğullarını kaybeden Peygamberimizle alay edenlere karşı Allah'ın bir müjdesi olarak indi.`},
+ {k:"Dua", t:`Hz. Musa'nın Duası`, r:`Tâhâ Suresi, 25–28. ayetler`, ay:25,
+  tr:`Rabbim! Göğsümü genişlet. İşimi kolaylaştır. Dilimdeki düğümü çöz ki sözümü anlasınlar.`,
+  ok:`Rabbişrah lî sadrî. Ve yessir lî emrî. Vahlul ukdeten min lisânî. Yefkahû kavlî.`,
+  ar:`رَبِّ اشْرَحْ لِي صَدْرِي ۝ وَيَسِّرْ لِي أَمْرِي ۝ وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي ۝ يَفْقَهُوا قَوْلِي`,
+  d:`Hz. Musa, Firavun'un karşısına çıkmadan önce bu duayı etti. Sınavdan ya da zor bir konuşmadan önce sen de okuyabilirsin.`},
+ {k:"Hikaye", t:`Hz. İbrahim ve Ateş`, r:`Enbiyâ Suresi, 69. ayet`,
+  s:[`Hz. İbrahim'in kavmi taştan ve tahtadan yaptıkları putlara tapıyordu. İbrahim, putların hiçbir şeye gücü olmadığını göstermek için onları kırdı ve baltayı en büyüğünün omzuna astı.`,
+     `"Bunu kim yaptı?" diye sorduklarında İbrahim, "Büyüklerine sorun, konuşabiliyorlarsa" dedi. Cevap veremediler, ama inatlarından vazgeçmediler.`,
+     `İbrahim'i dev bir ateşe attılar. Allah emretti: "Ey ateş! İbrahim'e karşı serin ve esenlik ol." Ateş onu yakmadı ve İbrahim oradan sağ salim çıktı.`],
+  ar:`قُلْنَا يَا نَارُ كُونِي بَرْدًا وَسَلَامًا عَلَىٰ إِبْرَاهِيمَ`, art:`Dedik ki: Ey ateş! İbrahim'e karşı serin ve esenlik ol.`,
+  d:`Hakikati söylemek cesaret ister. Allah'a güvenen kişiyi Allah yalnız bırakmaz.`},
+ {k:"Sure", t:`Felak Suresi`, r:`Kur'an'ın 113. suresi · 5 ayet`,
+  tr:`De ki: Sabahın Rabbine sığınırım; yarattığı şeylerin şerrinden, karanlığı çöktüğünde gecenin şerrinden, düğümlere üfleyenlerin şerrinden ve haset ettiğinde hasetçinin şerrinden.`,
+  ok:`Kul eûzü birabbil-felak. Min şerri mâ halak. Ve min şerri ğâsikın izâ vekab. Ve min şerrin-neffâsâti fil-ukad. Ve min şerri hâsidin izâ hased.`,
+  ar:`قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ`,
+  d:`Felak ve Nâs surelerine "Muavvizeteyn", yani iki koruyucu sure denir. Peygamberimiz her gece yatmadan önce bunları okurdu.`},
+ {k:"Dua", t:`Tevekkül Duası`, r:`Âl-i İmrân Suresi, 173. ayet`,
+  tr:`Allah bize yeter. O ne güzel vekildir.`,
+  ok:`Hasbünallâhü ve ni'mel-vekîl.`,
+  ar:`حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ`,
+  d:`İbn Abbas'ın rivayetine göre Hz. İbrahim ateşe atılırken bu sözü söyledi (Buhârî). Bir şey seni endişelendirdiğinde elinden geleni yap, sonrasını Allah'a bırak.`},
+ {k:"Hikaye", t:`Sevr Mağarası`, r:`Tevbe Suresi, 40. ayet`,
+  s:[`Hicret sırasında Peygamberimiz ve Hz. Ebû Bekir, peşlerindeki müşriklerden saklanmak için Sevr Mağarası'na girdiler.`,
+     `Takipçiler mağaranın ağzına kadar geldi. Hz. Ebû Bekir korkuyla, "Biri eğilip baksa bizi görecek" dedi. Peygamberimiz sakince cevap verdi: "Üzülme, Allah bizimle beraberdir."`,
+     `Rivayete göre mağaranın girişine bir örümcek ağ örmüş, bir güvercin yuva yapmıştı. Takipçiler içeride kimse olamayacağını düşünüp geri döndüler.`],
+  ar:`لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا`, art:`Üzülme, şüphesiz Allah bizimle beraberdir.`,
+  d:`Zor anlarda paniğe kapılma. Gerekli tedbiri al ve Allah'ın seninle olduğunu bil.`},
+ {k:"Hikaye", t:`Bedir Günü`, r:`Âl-i İmrân Suresi, 123. ayet · 17 Ramazan`,
+  s:[`Hicretin ikinci yılında, Ramazan'ın 17'sinde Bedir'de Müslümanların ilk büyük savaşı oldu. Müslümanlar yaklaşık 313 kişiydi; çok azının atı ve silahı vardı. Karşılarında bin kişilik bir ordu duruyordu.`,
+     `Savaştan önceki gece Peygamberimiz ellerini açıp sabaha kadar dua etti.`,
+     `Allah meleklerle yardım etti ve Müslümanlar kazandı. Kur'an bu güne "Furkân günü", yani hak ile batılın ayrıldığı gün der.`],
+  ar:`وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنتُمْ أَذِلَّةٌ`, art:`Andolsun ki siz güçsüz iken Allah size Bedir'de yardım etti.`,
+  d:`Sayı az olsa da iman, birlik ve dua büyük bir güçtür. Bedir bize Ramazan'ın tembellik değil gayret ayı olduğunu gösterir.`},
+ {k:"Sure", t:`Nâs Suresi`, r:`Kur'an'ın 114. suresi · 6 ayet`,
+  tr:`De ki: İnsanların Rabbine, insanların hükümdarına, insanların ilahına sığınırım; sinsi vesvesecinin şerrinden. O, insanların göğüslerine vesvese verir; cinlerden de olur, insanlardan da.`,
+  ok:`Kul eûzü birabbin-nâs. Melikin-nâs. İlâhin-nâs. Min şerril-vesvâsil-hannâs. Ellezî yüvesvisü fî sudûrin-nâs. Minel-cinneti ven-nâs.`,
+  ar:`قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلَٰهِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ`,
+  d:`Kur'an'ın son suresidir. Aklına kötü düşünceler geldiğinde Allah'a sığınmayı öğretir.`},
+ {k:"Dua", t:`Kalp Sebatı Duası`, r:`Âl-i İmrân Suresi, 8. ayet`,
+  tr:`Rabbimiz! Bizi doğru yola ilettikten sonra kalplerimizi kaydırma ve bize katından bir rahmet bağışla. Şüphesiz sen çok bağışlayansın.`,
+  ok:`Rabbenâ lâ tüziğ kulûbenâ ba'de iz hedeytenâ ve heb lenâ min ledünke rahmeh, inneke entel-vehhâb.`,
+  ar:`رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ`,
+  d:`İman bir hediyedir ve onu korumak için de dua etmek gerekir. Ramazan'da kazandığın güzel alışkanlıkları bayramdan sonra da sürdür.`},
+ {k:"Hikaye", t:`Mekke'nin Fethi`, r:`İsrâ Suresi, 81. ayet · 20 Ramazan`,
+  s:[`Hicretin sekizinci yılında, Ramazan ayında Peygamberimiz on bin kişilik bir orduyla Mekke'ye yürüdü. Bu, yıllarca kendisine eziyet eden ve onu yurdundan çıkaran şehirdi.`,
+     `Mekke neredeyse hiç savaşılmadan fethedildi. Peygamberimiz Kâbe'deki putları kırarken "Hak geldi, batıl yok oldu" ayetini okudu.`,
+     `Sonra korku içinde bekleyen Mekkelilere döndü ve "Bugün size kınama yok. Gidin, hepiniz serbestsiniz" dedi.`],
+  ar:`وَقُلْ جَاءَ الْحَقُّ وَزَهَقَ الْبَاطِلُ ۚ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا`, art:`De ki: Hak geldi, batıl yok oldu. Şüphesiz batıl yok olmaya mahkûmdur.`,
+  d:`Güçlüyken affetmek en büyük erdemdir. Peygamberimiz intikam yerine merhameti seçti. Bugün sana kırgın olan birini affetmeyi dene.`},
+ {k:"Sure", t:`Nasr Suresi`, r:`Kur'an'ın 110. suresi · 3 ayet`,
+  tr:`Allah'ın yardımı ve fetih geldiğinde ve insanların bölük bölük Allah'ın dinine girdiğini gördüğünde, Rabbini hamd ile tesbih et ve O'ndan bağışlanma dile. Çünkü O, tövbeleri çok kabul edendir.`,
+  ok:`İzâ câe nasrullâhi vel-feth. Ve raeyten-nâse yedhulûne fî dînillâhi efvâcâ. Fesebbih bihamdi rabbike vestağfirh, innehû kâne tevvâbâ.`,
+  ar:`إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ ۝ وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا ۝ فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا`,
+  d:`Başarı geldiğinde kibirlenmek yerine şükretmek ve istiğfar etmek gerekir. Bu sure Mekke'nin fethinden sonraki günleri anlatır.`},
+ {k:"Dua", t:`Anne ve Baba İçin Dua`, r:`İsrâ Suresi, 24. ayet`,
+  tr:`Rabbim! Onlar beni küçükken nasıl şefkatle yetiştirdilerse, sen de onlara öyle merhamet et.`,
+  ok:`Rabbirhamhümâ kemâ rabbeyânî sağîrâ.`,
+  ar:`رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا`,
+  d:`Bugün annene ve babana bir iyilik yap: bir telefon, bir yardım ya da sadece içten bir teşekkür.`},
+ {k:"Hikaye", t:`Hz. Ömer ve Un Çuvalı`, r:`Halife Hz. Ömer'in hayatından`,
+  s:[`Halife Hz. Ömer geceleri Medine sokaklarında dolaşır, halkın halini kendi gözüyle görürdü. Bir gece bir çadırdan çocuk ağlamaları duydu.`,
+     `İçeride bir anne, ocakta bir tencere kaynatıyordu. "Ne pişiriyorsun?" diye sordu. Kadın, "Sadece su ve taş. Çocuklar yemek pişiyor sanıp uyusunlar diye" dedi.`,
+     `Hz. Ömer hemen ambara koştu ve un ile yağ çuvalını kendi sırtına yükledi. Yardımcısı "Ben taşıyayım" deyince, "Kıyamet günü benim yükümü de sen mi taşıyacaksın?" dedi. Yemeği kendi eliyle pişirdi ve çocuklar doyup gülünce oradan ayrıldı.`],
+  d:`Sorumluluk, başkasının derdini kendi derdin gibi görmektir. Oruç tuttuğumuzda açların halini daha iyi anlarız.`},
+ {k:"Dua", t:`Hz. Âdem'in Tövbesi`, r:`A'râf Suresi, 23. ayet`,
+  tr:`Rabbimiz! Biz kendimize zulmettik. Eğer bizi bağışlamaz ve bize merhamet etmezsen mutlaka kaybedenlerden oluruz.`,
+  ok:`Rabbenâ zalemnâ enfüsenâ ve in lem tağfir lenâ ve terhamnâ lenekûnenne minel-hâsirîn.`,
+  ar:`رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ`,
+  d:`Hz. Âdem ve Hz. Havva hata yaptıktan sonra bu duayla tövbe ettiler. Hata yapmak insanidir; önemli olan pişman olup Allah'a dönmektir.`},
+ {k:"Hikaye", t:`Denizin Yarılması`, r:`Şuarâ Suresi, 62. ayet`,
+  s:[`Firavun, İsrailoğullarına zulmediyordu. Allah'ın emriyle Hz. Musa onları bir gece Mısır'dan çıkardı. Firavun ve ordusu peşlerine düştü.`,
+     `Önlerinde deniz, arkalarında ordu vardı. Halk "Yakalandık!" diye korktu. Musa ise kararlıydı: "Asla! Rabbim benimle, bana yol gösterecek."`,
+     `Allah, asasını denize vurmasını emretti. Deniz ikiye ayrıldı ve ortasında kuru bir yol açıldı. İsrailoğulları karşıya geçti; Firavun ve ordusu ise sulara gömüldü.`],
+  ar:`قَالَ كَلَّا ۖ إِنَّ مَعِيَ رَبِّي سَيَهْدِينِ`, art:`Musa dedi ki: Asla! Çünkü Rabbim benimledir, bana yol gösterecektir.`,
+  d:`Önündeki yol kapalı görünse bile umudunu kaybetme. Allah'ın açamayacağı kapı yoktur.`},
+ {k:"Sure", t:`Kadir Suresi`, r:`Kur'an'ın 97. suresi · 5 ayet`,
+  tr:`Şüphesiz biz onu (Kur'an'ı) Kadir gecesinde indirdik. Kadir gecesinin ne olduğunu sen nereden bileceksin? Kadir gecesi bin aydan daha hayırlıdır. Melekler ve Ruh (Cebrail), o gece Rablerinin izniyle her iş için iner de iner. O gece, tan yeri ağarıncaya kadar bir esenliktir.`,
+  ok:`İnnâ enzelnâhü fî leyletil-kadr. Ve mâ edrâke mâ leyletül-kadr. Leyletül-kadri hayrun min elfi şehr. Tenezzelül-melâiketü ver-rûhu fîhâ bi izni rabbihim min külli emr. Selâmün hiye hattâ matla'il-fecr.`,
+  ar:`إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ ۝ وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ ۝ لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ ۝ تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ ۝ سَلَامٌ هِيَ حَتَّىٰ مَطْلَعِ الْفَجْرِ`,
+  d:`Bin ay yaklaşık 83 yıl eder, yani koca bir ömür! Kadir gecesi Ramazan'ın son on gecesinde aranır.`},
+ {k:"Dua", t:`Kadir Gecesi Duası`, r:`Tirmizî, Daavât 84`, tag:`Kadir Gecesi`,
+  tr:`Allah'ım! Sen affedicisin, affetmeyi seversin. Beni de affet.`,
+  ok:`Allâhümme inneke afüvvün tühibbül-afve fa'fü annî.`,
+  ar:`اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي`,
+  d:`Hz. Âişe, "Kadir gecesine denk gelirsem ne diyeyim?" diye sorduğunda Peygamberimiz ona bu duayı öğretti. Türkiye'de Kadir Gecesi Ramazan'ın 27. gecesinde ihya edilir.`},
+ {k:"Ayet", t:`Ben Çok Yakınım`, r:`Bakara Suresi, 186. ayet`,
+  tr:`Kullarım sana beni sorduklarında söyle: Ben çok yakınım. Bana dua ettiğinde dua edenin duasına cevap veririm. O halde benim davetime uysunlar ve bana iman etsinler ki doğru yolu bulsunlar.`,
+  ok:`Ve izâ seeleke ibâdî annî fe innî karîb, ücîbü da'veted-dâi izâ deân, felyestecîbû lî velyü'minû bî leallehüm yerşüdûn.`,
+  ar:`وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ ۖ فَلْيَسْتَجِيبُوا لِي وَلْيُؤْمِنُوا بِي لَعَلَّهُمْ يَرْشُدُونَ`,
+  d:`Bu ayet oruç ayetlerinin tam ortasında yer alır. Allah'a dua etmek için hiçbir aracıya gerek yoktur; O her an yakındır.`},
+ {k:"Hikaye", t:`Esen Rüzgârdan Daha Cömert`, r:`Buhârî, Bed'ü'l-vahy 5`,
+  s:[`İbn Abbas anlatır: Peygamberimiz insanların en cömerdiydi. En cömert olduğu zaman ise Ramazan ayıydı.`,
+     `Ramazan'da Cebrail her gece gelir, Peygamberimizle Kur'an'ı karşılıklı okurdu. O günlerde Peygamberimiz iyilik yapmakta esen rüzgârdan daha cömert olurdu.`,
+     `Bu yüzden Ramazan'ın sonunda fitre (fıtır sadakası) verilir. Fitre bayram namazından önce ihtiyaç sahiplerine ulaştırılır ki onlar da bayramı sevinçle karşılasın.`],
+  d:`Bayramdan önce fitreni ver ve bir ihtiyaç sahibini sevindir. Peygamberimiz, kardeşine gülümsemenin bile sadaka olduğunu söylemiştir.`},
+ {k:"Zikir", t:`Bayram Tekbiri`, r:`Bayram sabahı okunur`, 
+  tr:`Allah en büyüktür, Allah en büyüktür. Allah'tan başka ilah yoktur. Allah en büyüktür, Allah en büyüktür. Hamd yalnızca Allah'a mahsustur.`,
+  ok:`Allâhü ekber, Allâhü ekber. Lâ ilâhe illallâhü vallâhü ekber. Allâhü ekber ve lillâhil-hamd.`,
+  ar:`اللَّهُ أَكْبَرُ اللَّهُ أَكْبَرُ، لَا إِلَٰهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ وَلِلَّهِ الْحَمْدُ`,
+  d:`Ramazan Bayramın mübarek olsun! Bayram sabahı tekbir getirerek namaza gidilir. Küslerle barışmak, büyükleri ziyaret etmek ve çocukları sevindirmek bayramın en güzel sünnetleridir.`}
+];
+DAYS[16].tag = "Bedir"; DAYS[19].tag = "Mekke'nin Fethi";
+DAYS[26].x="kadir"; DAYS[29].x="bayram"; DAYS[29].tag="Bayram Kapısı";
+
+/* ---------- storage helpers ---------- */
+const store = {
+  get(k, f){ try{ const v = localStorage.getItem("rk_"+k); return v==null ? f : JSON.parse(v); }catch(e){ return f; } },
+  set(k, v){ try{ localStorage.setItem("rk_"+k, JSON.stringify(v)); }catch(e){} }
+};
+let opened = new Set(store.get("opened", []));
+let preview = store.get("preview", false);
+let startISO = store.get("start", "2027-02-08");
+
+/* ---------- pointed-arch clip paths ---------- */
+(function(){
+  const c=.8, s=.34, n=16, r=c, tMax=Math.acos((c-.5)/r), sMax=Math.sin(tMax);
+  const pts=[];
+  for(let i=0;i<=n;i++){ const t=tMax*i/n; pts.push([c-r*Math.cos(t), s - s*Math.sin(t)/sMax]); }
+  const P=(x,y)=>`${(x*100).toFixed(2)}% ${(y*100).toFixed(2)}%`;
+  const full=[...pts.map(([x,y])=>P(x,y)), ...pts.slice().reverse().map(([x,y])=>P(1-x,y)), "100% 100%","0% 100%"];
+  const L=[...pts.map(([x,y])=>P(x*2,y)), "100% 100%","0% 100%"];
+  const R=[...pts.map(([x,y])=>P(1-x*2,y)), "0% 100%","100% 100%"];
+  const st=document.documentElement.style;
+  st.setProperty("--arch",`polygon(${full.join(",")})`);
+  st.setProperty("--leafL",`polygon(${L.join(",")})`);
+  st.setProperty("--leafR",`polygon(${R.join(",")})`);
+})();
+
+/* ---------- dates ---------- */
+const MS=86400000;
+const parseISO = iso => { const [y,m,d]=iso.split("-").map(Number); return new Date(y,m-1,d); };
+const midnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+const fmtLong = d => d.toLocaleDateString("tr-TR",{day:"numeric",month:"long",year:"numeric"});
+const fmtShort = d => d.toLocaleDateString("tr-TR",{day:"numeric",month:"short"});
+function todayIndex(){ // 0 = before, 1..30 during, 31 after
+  const diff = Math.round((midnight(new Date()) - parseISO(startISO))/MS);
+  return diff < 0 ? 0 : Math.min(diff+1, 31);
+}
+const dateOf = day => new Date(parseISO(startISO).getTime() + (day-1)*MS + 3*3600000);
+const isUnlocked = day => preview || day <= todayIndex();
+
+/* ---------- render ---------- */
+const grid=document.getElementById("grid");
+function build(){
+  grid.innerHTML="";
+  const ti=todayIndex();
+  DAYS.forEach((it,i)=>{
+    const day=i+1;
+    const b=document.createElement("button");
+    b.type="button"; b.className="door"; b.dataset.day=day;
+    if(!isUnlocked(day)) b.classList.add("locked");
+    if(opened.has(day) && isUnlocked(day)) b.classList.add("open");
+    if(day===ti) b.classList.add("today");
+    if(it.x) b.classList.add(it.x);
+    b.style.setProperty("--i",i);
+    b.setAttribute("aria-label", `${day}. gün kapısı` + (isUnlocked(day) ? (opened.has(day)?`, açık: ${it.t}`:", açılabilir") : `, ${fmtLong(dateOf(day))} tarihinde açılır`));
+    b.innerHTML = `
+      <span class="art">
+        <span class="halo"></span>
+        <span class="frame"></span>
+        <span class="inner"><span class="n">${day}</span><span class="k">${it.k}</span></span>
+        <span class="leaf l"></span><span class="leaf r"></span>
+        <span class="seam"></span><span class="knob l"></span><span class="knob r"></span>
+        <span class="badge">${day}</span>
+      </span>
+      <span class="meta"><span class="d">${fmtShort(dateOf(day))}</span><span class="tag">${it.tag || (day===ti ? "Bugün" : "")}</span></span>`;
+    b.addEventListener("click",()=>onDoor(b,day));
+    grid.appendChild(b);
+  });
+  status();
+}
+function status(){
+  const ti=todayIndex(), main=document.getElementById("statusMain"), sub=document.getElementById("statusSub");
+  if(ti===0){
+    const days=Math.round((parseISO(startISO)-midnight(new Date()))/MS);
+    main.innerHTML=`Ramazan'a <b>${days}</b> gün kaldı`;
+    sub.textContent=`İlk kapı ${fmtLong(parseISO(startISO))} sabahı açılacak.` + (preview ? " Önizleme açık: tüm kapıları şimdiden deneyebilirsin." : "");
+  }else if(ti<=30){
+    main.innerHTML=`Bugün Ramazan'ın <b>${ti}.</b> günü`;
+    sub.textContent = opened.has(ti) ? "Bugünün kapısını açtın. Yarın yeni bir kapı seni bekliyor." : "Bugünün kapısı parlıyor. Açmak için dokun.";
+  }else{
+    main.innerHTML=`<b>Bayramın mübarek olsun!</b>`;
+    sub.textContent="Ramazan sona erdi. Bütün kapılar açık; dilediğini tekrar okuyabilirsin.";
+  }
+  const beads=document.getElementById("beads"); beads.innerHTML="";
+  for(let d=1; d<=30; d++){ const i=document.createElement("i"); if(opened.has(d)&&isUnlocked(d)) i.className="on"; else if(isUnlocked(d)) i.className="avail"; beads.appendChild(i); }
+  const n=[...opened].filter(isUnlocked).length;
+  document.getElementById("progressLabel").textContent=`${n} / 30 kapı açıldı`;
+  const pb=document.getElementById("previewBtn"); pb.setAttribute("aria-pressed", String(preview));
+  pb.textContent = preview ? "Önizleme açık" : "Önizleme: tüm kapıları aç";
+}
+
+/* ---------- interaction ---------- */
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let toastT;
+function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("show"),2800); }
+function sparkle(el){
+  if(reduce) return;
+  const r=el.querySelector(".art").getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height*.55;
+  for(let i=0;i<26;i++){
+    const s=document.createElement("span"); s.className="spark"+(i%3===0?" star":"");
+    const a=Math.random()*Math.PI*2, d=40+Math.random()*90;
+    s.style.left=cx+"px"; s.style.top=cy+"px";
+    s.style.setProperty("--x",Math.cos(a)*d+"px"); s.style.setProperty("--y",Math.sin(a)*d-20+"px");
+    s.style.animationDuration=(.7+Math.random()*.7)+"s";
+    document.body.appendChild(s); setTimeout(()=>s.remove(),1500);
+  }
+}
+function onDoor(b,day){
+  if(!isUnlocked(day)){
+    b.classList.remove("shake"); void b.offsetWidth; b.classList.add("shake");
+    toast(`Bu kapı ${fmtLong(dateOf(day))} günü açılacak.`);
+    return;
+  }
+  if(b.classList.contains("open")){ show(day); return; }
+  b.classList.add("open"); opened.add(day); store.set("opened",[...opened]);
+  sparkle(b); status();
+  if(DAYS[day-1].x==='kadir') sparkle(b);
+  setTimeout(()=>show(day), reduce ? 150 : (DAYS[day-1].x ? 1300 : 1000));
+}
+
+/* ---------- reading sheet ---------- */
+const sheet=document.getElementById("sheet");
+let current=0, lastFocus=null;
+const esc = s => s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+let ctx={type:"day"};
+function show(day){
+  ctx={type:"day"}; current=day;
+  renderSheet(DAYS[day-1], `${day}. gün · ${DAYS[day-1].k}`, !!prevAvail(day), !!nextAvail(day), "‹ Önceki gün", "Sonraki gün ›");
+}
+function ayahMarks(it){
+  if(!it.ar.includes("۝")) return it.ar;
+  const ar=n=>String(n).replace(/\d/g,d=>"٠١٢٣٤٥٦٧٨٩"[d]);
+  let n=(it.ay||1)-1;
+  return it.ar.replace(/ ۝ /g,()=>` ﴿${ar(++n)}﴾ `)+` ﴿${ar(n+1)}﴾`;
+}
+function renderSheet(it,label,hasPrev,hasNext,pl,nl){
+  if(sheet.hidden) lastFocus=document.activeElement;
+  document.getElementById("pKind").textContent=label;
+  document.getElementById("pTitle").textContent=it.t;
+  document.getElementById("pRef").textContent=it.r;
+  let h="";
+  if(it.s){
+    h+=`<div class="block story"><h3>Hikâye</h3>${it.s.map(p=>`<p>${esc(p)}</p>`).join("")}</div>`;
+    if(it.ar){ h+=`<div class="block"><h3>İlgili ayet · Anlamı</h3><p>${esc(it.art)}</p></div><div class="block"><h3>Arapçası</h3><div class="arabic" lang="ar">${it.ar}</div></div>`; }
+  }else{
+    h+=`<div class="block"><h3>Türkçe anlamı</h3><p>${esc(it.tr)}</p></div>`;
+    h+=`<div class="block"><h3>Okunuşu</h3><p class="translit">${esc(it.ok)}</p></div>`;
+    h+=`<div class="block"><h3>Arapçası</h3><div class="arabic" lang="ar">${ayahMarks(it)}</div></div>`;
+  }
+  if(it.x==="bayram") h=bayramTop()+h;
+  h+=`<div class="block lesson"><h3>Bugünün dersi</h3><p>${esc(it.d)}</p></div>`;
+  if(it.x==="kadir") h+=kadirExtra();
+  if(it.x==="bayram") h+=bayramExtra();
+  document.getElementById("pBody").innerHTML=h;
+  document.querySelector(".panel").className="panel"+(it.x?" "+it.x:"");
+  if(it.x==="bayram") fireworks(6000);
+  sheet.hidden=false; document.body.style.overflow="hidden";
+  sheet.querySelector(".panel").scrollTop=0;
+  const pb=document.getElementById("prevBtn"), nb=document.getElementById("nextBtn");
+  pb.disabled=!hasPrev; nb.disabled=!hasNext; pb.textContent=pl; nb.textContent=nl;
+  document.getElementById("closeBtn").focus();
+}
+function navPrev(){ ctx.type==="day" ? goto(prevAvail(current)) : libStep(-1); }
+function navNext(){ ctx.type==="day" ? goto(nextAvail(current)) : libStep(1); }
+const prevAvail = d => { for(let x=d-1;x>=1;x--) if(isUnlocked(x)) return x; return 0; };
+const nextAvail = d => { for(let x=d+1;x<=30;x++) if(isUnlocked(x)) return x; return 0; };
+function goto(day){
+  if(!day) return;
+  if(!opened.has(day)){ opened.add(day); store.set("opened",[...opened]); const b=grid.querySelector(`[data-day="${day}"]`); b && b.classList.add("open"); status(); }
+  show(day);
+}
+function hide(){ sheet.hidden=true; document.body.style.overflow=""; if(lastFocus) lastFocus.focus(); }
+document.getElementById("closeBtn").onclick=hide;
+document.getElementById("prevBtn").onclick=navPrev;
+document.getElementById("nextBtn").onclick=navNext;
+sheet.addEventListener("click",e=>{ if(e.target===sheet) hide(); });
+document.addEventListener("keydown",e=>{
+  if(sheet.hidden) return;
+  if(e.key==="Escape") hide();
+  if(e.key==="ArrowLeft" && !document.getElementById("prevBtn").disabled) navPrev();
+  if(e.key==="ArrowRight" && !document.getElementById("nextBtn").disabled) navNext();
+});
+
+/* ---------- controls ---------- */
+const startInput=document.getElementById("startDate");
+startInput.value=startISO;
+startInput.addEventListener("change",()=>{ if(startInput.value){ startISO=startInput.value; store.set("start",startISO); build(); } });
+document.getElementById("previewBtn").onclick=()=>{ preview=!preview; store.set("preview",preview); build(); toast(preview?"Önizleme açık: tüm kapılara dokunabilirsin.":"Önizleme kapandı."); };
+document.getElementById("resetBtn").onclick=()=>{ opened=new Set(); store.set("opened",[]); build(); toast("Bütün kapılar yeniden kapandı."); };
+
+build();
+
+/* ---------- brass lanterns on wires ---------- */
+(function(){
+  const svg=document.getElementById("lampScene");
+  let o=`<defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b2a12"/><stop offset=".45" stop-color="#b8955c"/><stop offset=".6" stop-color="#8a6a35"/><stop offset="1" stop-color="#2e200d"/></linearGradient>
+    <radialGradient id="lampGlowG" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#fff6d8"/><stop offset=".45" stop-color="#f6c36a"/><stop offset="1" stop-color="#a5561a"/></radialGradient>
+    <pattern id="fret" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 3L3 0L6 3L3 6Z" fill="none" stroke="#3a2810" stroke-width="1.2"/><circle cx="3" cy="3" r=".8" fill="#3a2810"/></pattern>
+    <filter id="lb" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="9"/></filter>
+    <symbol id="lamp" viewBox="-30 0 60 150" overflow="visible">
+      <ellipse class="lampglow" cx="0" cy="80" rx="38" ry="48" fill="#f3a94a" filter="url(#lb)"/>
+      <circle cx="0" cy="5" r="4" fill="none" stroke="#6e5328" stroke-width="2"/>
+      <path d="M-2 9H2L3 19H-3Z" fill="#7a5a2a"/><circle cx="0" cy="21" r="3.6" fill="#9a7a40"/>
+      <path d="M-18 46Q-18 27 0 24Q18 27 18 46Z" fill="url(#lampGlowG)"/>
+      <path d="M-18 46Q-18 27 0 24Q18 27 18 46Z" fill="url(#fret)"/>
+      <path d="M-18 46Q-18 27 0 24Q18 27 18 46Z" fill="none" stroke="#5a4220" stroke-width="1.5"/>
+      <rect x="-22" y="45" width="44" height="5" rx="1" fill="url(#brass)"/>
+      <path d="M-11 50H11V100H-11Z" fill="url(#lampGlowG)"/>
+      <path d="M-11 50L-21 52V98L-11 100Z" fill="url(#lampGlowG)" opacity=".75"/>
+      <path d="M11 50L21 52V98L11 100Z" fill="url(#lampGlowG)" opacity=".75"/>
+      <path d="M-11 50L-21 52V98L-11 100ZM11 50L21 52V98L11 100Z" fill="url(#fret)"/>
+      <path d="M-11 50H11V100H-11ZM-7 96V64Q-7 56 0 53Q7 56 7 64V96Z" fill="url(#fret)" fill-rule="evenodd"/>
+      <path d="M-11 50H11V100H-11ZM-6.5 95V64Q-6.5 57 0 54Q6.5 57 6.5 64V95Z" fill="#4a3418" fill-opacity=".45" fill-rule="evenodd"/>
+      <g stroke="#5a4220" stroke-width="2"><line x1="-21" y1="52" x2="-21" y2="98"/><line x1="-11" y1="50" x2="-11" y2="100"/><line x1="11" y1="50" x2="11" y2="100"/><line x1="21" y1="52" x2="21" y2="98"/></g>
+      <rect x="-22" y="98" width="44" height="6" rx="1" fill="url(#brass)"/>
+      <path d="M-21 104H21L8 125H-8Z" fill="url(#lampGlowG)" opacity=".85"/>
+      <path d="M-21 104H21L8 125H-8Z" fill="url(#fret)"/>
+      <path d="M-21 104H21L8 125H-8Z" fill="none" stroke="#5a4220" stroke-width="1.4"/>
+      <path d="M-8 125H8L2 139H-2Z" fill="url(#brass)"/><circle cx="0" cy="142" r="2.6" fill="#9a7a40"/>
+    </symbol>
+  </defs>`;
+  // crescent moon
+  o+=`<g transform="translate(800 64) rotate(-28)"><path d="M0 -34A34 34 0 1 0 0 34A22 34 0 0 1 0 -34Z" fill="#f3ead8" opacity=".92"/></g>
+      <circle cx="790" cy="64" r="48" fill="#f3ead8" opacity=".06"/>`;
+  const wires=[[-20,24,600,120,1220,30],[-20,90,600,150,1220,10],[-20,6,600,70,1220,96]];
+  const B=(w,t)=>[(1-t)*(1-t)*w[0]+2*(1-t)*t*w[2]+t*t*w[4],(1-t)*(1-t)*w[1]+2*(1-t)*t*w[3]+t*t*w[5]];
+  wires.forEach(w=>{ o+=`<path d="M${w[0]} ${w[1]}Q${w[2]} ${w[3]} ${w[4]} ${w[5]}" fill="none" stroke="#140406" stroke-opacity=".75" stroke-width="1.4"/>`; });
+  // [wire, t, drop, scale]  (smaller = farther)
+  const L=[[2,.05,10,.55],[2,.2,30,.5],[2,.36,6,.48],[2,.55,40,.5],[2,.7,14,.46],[2,.88,24,.52],
+           [1,.1,20,.75],[1,.3,46,.7],[1,.5,8,.78],[1,.66,36,.72],[1,.86,14,.7],
+           [0,.04,40,1],[0,.18,12,.92],[0,.4,26,1.05],[0,.62,6,.95],[0,.8,34,1],[0,.96,10,.9]];
+  L.forEach(([wi,t,drop,sc],i)=>{
+    const [x,y]=B(wires[wi],t), w=72*sc, h=180*sc, op=.55+.45*Math.min(1,sc);
+    o+=`<g class="swing" style="transform-origin:${x.toFixed(1)}px ${y.toFixed(1)}px;animation-delay:${(-i*0.9).toFixed(1)}s;animation-duration:${(6+sc*3).toFixed(1)}s" opacity="${op.toFixed(2)}">
+      <line x1="${x}" y1="${y}" x2="${x}" y2="${y+drop}" stroke="#1d0a05" stroke-width="1.2"/>
+      <use href="#lamp" x="${x-w/2}" y="${y+drop}" width="${w}" height="${h}"/></g>`;
+  });
+  svg.innerHTML=o;
+})();
+
+/* ---------- Ottoman mosque ---------- */
+(function(){
+  const G=430, f=n=>n.toFixed(1);
+  const arch=(x,y,w,h,fill,extra="")=>`<path d="M${f(x)} ${f(y+h)}V${f(y+w*.7)}Q${f(x)} ${f(y+w*.15)} ${f(x+w/2)} ${f(y)}Q${f(x+w)} ${f(y+w*.15)} ${f(x+w)} ${f(y+w*.7)}V${f(y+h)}Z" fill="${fill}" ${extra}/>`;
+  const dome=(cx,by,rx,h,alem=true)=>{
+    let d=`<path d="M${cx-rx} ${by}C${cx-rx} ${by-h*.78} ${cx-rx*.56} ${by-h} ${cx} ${by-h}C${cx+rx*.56} ${by-h} ${cx+rx} ${by-h*.78} ${cx+rx} ${by}Z" fill="url(#domeG)"/>`;
+    d+=`<rect x="${cx-rx-3}" y="${by-2}" width="${rx*2+6}" height="5" rx="1.5" fill="#bda57f"/>`;
+    if(alem && rx>12){ const t=by-h; d+=`<line x1="${cx}" y1="${t}" x2="${cx}" y2="${t-rx*.28-6}" stroke="#d9b26a" stroke-width="1.6"/><circle cx="${cx}" cy="${t-rx*.12-2}" r="${f(Math.max(1.6,rx*.04))}" fill="#d9b26a"/>`; }
+    return d;
+  };
+  const minaret=(x,top,w,n)=>{
+    const base=G-46; let m=`<rect x="${x-w/2-6}" y="${base}" width="${w+12}" height="46" fill="url(#st)"/><rect x="${x-w/2-8}" y="${base-4}" width="${w+16}" height="5" fill="#c7b08a"/>`;
+    m+=`<rect x="${x-w/2}" y="${top+46}" width="${w}" height="${base-top-46}" fill="url(#stCyl)"/>`;
+    for(let k=1;k<4;k++) m+=`<line x1="${f(x-w/2+k*w/4)}" y1="${top+50}" x2="${f(x-w/2+k*w/4)}" y2="${base}" stroke="#6b5539" stroke-opacity=".14"/>`;
+    for(let i=0;i<n;i++){
+      const y=top+66+i*(base-top-150)/Math.max(1,n-1+.6);
+      m+=`<path d="M${x-w/2} ${f(y+12)}L${x-w/2-7} ${f(y)}H${x+w/2+7}L${x+w/2} ${f(y+12)}Z" fill="#bfa47a"/>`;
+      m+=`<path d="M${x-w/2-2} ${f(y+8)}H${x+w/2+2}" stroke="#7a5f3a" stroke-opacity=".5"/>`;
+      m+=`<rect x="${x-w/2-8}" y="${f(y-6)}" width="${w+16}" height="6" rx="1" fill="#efe3cc"/><rect x="${x-w/2-8}" y="${f(y-6)}" width="${w+16}" height="1.5" fill="#9a7f58"/>`;
+    }
+    m+=`<path d="M${x-w/2-1} ${top+47}L${x} ${top}L${x+w/2+1} ${top+47}Z" fill="url(#lead)"/>`;
+    m+=`<line x1="${x}" y1="${top}" x2="${x}" y2="${top-14}" stroke="#d9b26a" stroke-width="1.6"/><circle cx="${x}" cy="${top-6}" r="2" fill="#d9b26a"/>`;
+    m+=`<path d="M${x} ${top-26}a5 5 0 1 0 0 10a3.8 3.8 0 1 1 0 -10Z" fill="#d9b26a"/>`;
+    return m;
+  };
+  let o=`<defs>
+    <linearGradient id="st" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8c4a4"/><stop offset="1" stop-color="#f6ead4"/></linearGradient>
+    <linearGradient id="stCyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b39b78"/><stop offset=".42" stop-color="#f7ecd9"/><stop offset="1" stop-color="#9f8562"/></linearGradient>
+    <linearGradient id="lead" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6f6258"/><stop offset=".4" stop-color="#c9bdae"/><stop offset="1" stop-color="#5e524a"/></linearGradient>
+    <radialGradient id="domeG" cx="36%" cy="25%" r="85%"><stop offset="0" stop-color="#ece3d6"/><stop offset=".5" stop-color="#ab9d8e"/><stop offset="1" stop-color="#655950"/></radialGradient>
+    <radialGradient id="mgGlow" cx="50%" cy="70%" r="70%"><stop offset="0" stop-color="#fff6dc"/><stop offset=".45" stop-color="#f0b65a"/><stop offset="1" stop-color="#8a3f14"/></radialGradient>
+    <linearGradient id="winG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe0a0"/><stop offset="1" stop-color="#e08a2e"/></linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>`;
+  o+=`<ellipse class="m-aura" cx="400" cy="400" rx="340" ry="80" fill="#f0b65a" opacity=".22" filter="url(#soft)"/>`;
+  o+=minaret(206,118,13,2)+minaret(594,118,13,2);
+  // drum + corner turrets
+  o+=`<rect x="316" y="184" width="168" height="70" fill="url(#st)"/>`;
+  let w=`<g class="win">`; for(let i=0;i<7;i++) w+=arch(326+i*22,204,11,30,"url(#winG)"); o+=w+`</g>`;
+  for(const x of [316,484]){ o+=`<rect x="${x-8}" y="196" width="16" height="58" fill="url(#stCyl)"/>`+dome(x,198,10,16); }
+  // main dome with window ring and ribs
+  o+=dome(400,188,98,104);
+  w=`<g class="win" style="animation-delay:-1s">`; for(let i=-4;i<=4;i++) w+=arch(400+i*19-3.5,170,7,14,"url(#winG)"); o+=w+`</g>`;
+  for(const k of [-.72,-.4,.4,.72]) o+=`<path d="M400 86Q${f(400+k*70)} 98 ${f(400+k*98)} 186" fill="none" stroke="#fff" stroke-opacity=".13" stroke-width="1.2"/>`;
+  o+=`<line x1="400" y1="84" x2="400" y2="52" stroke="#d9b26a" stroke-width="2.4"/><circle cx="400" cy="70" r="3.4" fill="#d9b26a"/><circle cx="400" cy="60" r="2.4" fill="#d9b26a"/>`;
+  o+=`<path d="M400 30a9 9 0 1 0 0 18a7 7 0 1 1 0 -18Z" fill="#d9b26a"/>`;
+  // half domes
+  o+=dome(296,258,76,64,false)+dome(504,258,76,64,false);
+  // main block
+  o+=`<rect x="214" y="252" width="372" height="82" fill="url(#st)"/><rect x="210" y="249" width="380" height="6" rx="1.5" fill="#c7b08a"/>`;
+  w=`<g class="win" style="animation-delay:-2s">`;
+  for(let i=0;i<4;i++){ w+=arch(232+i*28,276,13,32,"url(#winG)"); w+=arch(487+i*28,276,13,32,"url(#winG)"); }
+  o+=w+`</g>`;
+  o+=dome(238,254,26,28)+dome(562,254,26,28);
+  // courtyard arcade
+  o+=`<rect x="134" y="338" width="532" height="${G-338}" fill="url(#st)"/><rect x="130" y="333" width="540" height="6" rx="1.5" fill="#c7b08a"/>`;
+  for(let x=158;x<=642;x+=40){ if(x>330&&x<470) continue; o+=dome(x,336,15,15,false); }
+  w=`<g>`;
+  for(let x=146;x<=640;x+=40){ if(x>322&&x<460) continue;
+    w+=arch(x,350,26,G-356,"#2a1009");
+    w+=`<g class="win" style="animation-delay:${-(x%7)}s">`+arch(x+3,354,20,G-362,"url(#winG)",'opacity=".5"')+`<circle cx="${x+13}" cy="376" r="2.6" fill="#fff0c4"/></g>`;
+  }
+  o+=w+`</g>`;
+  // portal with muqarnas
+  o+=`<rect x="342" y="284" width="116" height="${G-284}" fill="url(#st)"/><rect x="338" y="280" width="124" height="6" rx="1.5" fill="#c7b08a"/>`;
+  o+=`<rect x="348" y="290" width="104" height="${G-290}" fill="none" stroke="#b8955c" stroke-width="1.5"/>`;
+  for(const x of [342,458]) o+=`<path d="M${x-6} 280L${x} 262L${x+6} 280Z" fill="url(#lead)"/>`;
+  o+=`<path d="M354 ${G}V346Q354 306 400 292Q446 306 446 346V${G}Z" fill="#b8955c"/>`;
+  o+=`<path d="M358 ${G}V347Q358 310 400 297Q442 310 442 347V${G}Z" fill="#7a5a2a"/>`;
+  let mq=""; [[4,306,12],[6,318,11],[8,329,9.6]].forEach(([n,y,aw])=>{ const sx=400-n*aw/2; for(let i=0;i<n;i++) mq+=arch(sx+i*aw,y,aw,11,"#e3cfa6",'stroke="#8a6a35" stroke-width=".8"'); });
+  o+=mq;
+  o+=`<path class="m-light" d="M368 ${G}V364Q368 344 400 336Q432 344 432 364V${G}Z" fill="url(#mgGlow)"/>`;
+  const leaf=(side)=>{ const s=side==="l"?-1:1, px=side==="l"?368:432;
+    return `<g class="leaf-m ${side}"><path d="M${px} ${G}V364Q${px} 344 400 336V${G}Z" fill="#5a3322" stroke="#d9b26a" stroke-width="1.5"/>
+      <rect x="${side==="l"?374:404}" y="372" width="22" height="50" rx="2" fill="none" stroke="#d9b26a" stroke-opacity=".7"/>
+      <path d="M${400+s*-16} 352l3 6 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6-4.5-4 6-1Z" fill="#d9b26a"/>
+      <circle cx="${400+s*-5}" cy="396" r="2.4" fill="#d9b26a"/></g>`; };
+  o+=leaf("l")+leaf("r");
+  // outer tall minarets
+  o+=minaret(92,36,18,3)+minaret(708,36,18,3);
+  // ground
+  o+=`<rect x="30" y="${G}" width="740" height="10" rx="2" fill="#a98647"/><rect x="352" y="${G+10}" width="96" height="7" rx="2" fill="#d6bf95"/>`;
+  document.getElementById("mosqueSvg").innerHTML=o;
+})();
+
+/* ---------- Günün Amelleri ---------- */
+const todayKey = (()=>{ const d=new Date(); return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`; })();
+const dayNo = (()=>{ const d=midnight(new Date()); return Math.round((d - new Date(d.getFullYear(),0,1))/MS); })();
+
+/* zikir */
+const ZIKIR=[
+  {n:"Sübhânallah", ar:"سُبْحَانَ اللَّهِ", tr:"Allah her türlü eksiklikten uzaktır.", c:33},
+  {n:"Elhamdülillâh", ar:"الْحَمْدُ لِلَّهِ", tr:"Hamd yalnızca Allah'a mahsustur.", c:33},
+  {n:"Allâhü ekber", ar:"اللَّهُ أَكْبَرُ", tr:"Allah en büyüktür.", c:33},
+  {n:"Lâ ilâhe illallâh", ar:"لَا إِلَٰهَ إِلَّا اللَّهُ", tr:"Allah'tan başka ilah yoktur.", c:100},
+  {n:"Estağfirullâh", ar:"أَسْتَغْفِرُ اللَّهَ", tr:"Allah'tan bağışlanma dilerim.", c:100},
+  {n:"Sübhânallâhi ve bihamdihî", ar:"سُبْحَانَ اللَّهِ وَبِحَمْدِهِ", tr:"Allah'ı hamd ile tesbih ederim. Günde 100 kez söyleyenin günahları bağışlanır (Buhârî).", c:100},
+  {n:"Salavat", ar:"اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ", tr:"Allah'ım! Hz. Muhammed'e salât eyle.", ok:"Allâhümme salli alâ Muhammed", c:33}
+];
+let zk = store.get("zk", {day:"", sel:0, cnt:0, total:0, rounds:0});
+if(zk.day!==todayKey) zk={day:todayKey, sel:zk.sel||0, cnt:0, total:0, rounds:0};
+const ring=document.getElementById("beadRing");
+(function(){ // 33 beads + imame
+  let h=""; for(let i=0;i<33;i++){ const a=-Math.PI/2 + i*2*Math.PI/34; h+=`<circle class="bead" cx="${(100+86*Math.cos(a)).toFixed(1)}" cy="${(100+86*Math.sin(a)).toFixed(1)}" r="6"/>`; }
+  const a=-Math.PI/2 + 33*2*Math.PI/34; h+=`<circle class="bead imame" cx="${(100+86*Math.cos(a)).toFixed(1)}" cy="${(100+86*Math.sin(a)).toFixed(1)}" r="8"/>`;
+  ring.innerHTML=h;
+})();
+const chips=document.getElementById("zkChips");
+ZIKIR.forEach((z,i)=>{ const b=document.createElement("button"); b.type="button"; b.className="chip"; b.textContent=z.n; b.onclick=()=>{ zk.sel=i; zk.cnt=0; saveZk(); renderZk(); }; chips.appendChild(b); });
+function saveZk(){ store.set("zk",zk); }
+function renderZk(){
+  const z=ZIKIR[zk.sel];
+  [...chips.children].forEach((c,i)=>c.setAttribute("aria-pressed", String(i===zk.sel)));
+  document.getElementById("zkCount").textContent=zk.cnt;
+  document.getElementById("zkOf").textContent=`/ ${z.c}`;
+  document.getElementById("zkAr").textContent=z.ar;
+  document.getElementById("zkOk").textContent=z.ok || z.n;
+  document.getElementById("zkTr").textContent=z.tr;
+  document.getElementById("zkTotal").textContent=zk.total;
+  document.getElementById("zkRounds").textContent=zk.rounds;
+  const lit = z.c<=33 ? zk.cnt : Math.round(zk.cnt/z.c*33);
+  [...ring.querySelectorAll(".bead:not(.imame)")].forEach((b,i)=>b.classList.toggle("on", i<lit));
+}
+const tes=document.getElementById("tesbih");
+function count(){
+  const z=ZIKIR[zk.sel]; zk.cnt++; zk.total++;
+  try{ navigator.vibrate && navigator.vibrate(12); }catch(e){}
+  if(zk.cnt>=z.c){ zk.rounds++; renderZk(); sparkleAt(tes); toast(`Mâşallah! ${z.c} ${z.n} tamamlandı.`); zk.cnt=0; setTimeout(renderZk,600); }
+  else renderZk();
+  saveZk();
+}
+tes.addEventListener("click",count);
+document.addEventListener("keydown",e=>{ if(e.code==="Space" && document.activeElement===document.body && sheet.hidden){ e.preventDefault(); count(); } });
+document.getElementById("zkReset").onclick=()=>{ zk.cnt=0; saveZk(); renderZk(); };
+function sparkleAt(el){ if(reduce) return; const fake={querySelector:()=>el}; sparkle(fake); }
+renderZk();
+
+/* tasks */
+const TASKS=[
+  "Kur'an'dan en az bir sayfa oku.","Birine iftar ikram et ya da iftar sofrasının hazırlanmasına yardım et.","Bugün kimseyle tartışma; sadece güzel söz söyle.",
+  "Bir ihtiyaç sahibine sadaka ver. Küçük olması önemli değil.","Anneni ya da babanı ara ve onlar için dua et.","Teravih namazına katıl.",
+  "Sahura kalk. Peygamberimiz sahurda bereket olduğunu söyledi.","100 kez \"Estağfirullâh\" de.","Yeni bir hadis öğren ve ailene anlat.",
+  "Bir arkadaşına moral veren bir mesaj gönder.","İftardan önce 5 dakika sadece dua et.","Bugün israf etme; tabağında yemek bırakma.",
+  "Komşuna bir tabak yemek götür.","Bir sure ezberle ya da ezberindekileri tekrar et.","Ekran süreni yarım saat azalt, o vakti zikirle geçir.",
+  "Evde birine yardım et: sofrayı kur, bulaşığı yıka.","Küs olduğun biriyle barış.","10 kez salavat getir.",
+  "Yatmadan önce Felak ve Nâs surelerini oku.","Bugün karşılaştığın herkese gülümse ve selam ver.","Bir hayvana su veya yem ver.",
+  "Esmâü'l-Hüsnâ'dan yeni bir isim öğren.","Sabah namazından sonra 33'er kez tesbihat yap.","Bugün şükrettiğin üç şeyi bir kâğıda yaz.",
+  "Bir hasta ya da yetim için dua et.","Camiye git, bir vakti cemaatle kıl.","Gıybet etme; biri konuşulurken onun iyiliğini an.",
+  "İslami bir kitaptan 10 sayfa oku."
+];
+let taskState=store.get("tasks",{});
+const myTasks=[0,1,2,3].map(j=>(dayNo*5 + j*7) % TASKS.length);
+function renderTasks(){
+  const ul=document.getElementById("tasks"); ul.innerHTML="";
+  const done=taskState[todayKey]||[];
+  myTasks.forEach((ti,j)=>{
+    const li=document.createElement("li"); li.className="task"+(done.includes(ti)?" done":"");
+    const id="task"+j;
+    li.innerHTML=`<input type="checkbox" id="${id}" ${done.includes(ti)?"checked":""}><label for="${id}"><span>${esc(TASKS[ti])}</span></label>`;
+    li.querySelector("input").addEventListener("change",e=>{
+      const arr=new Set(taskState[todayKey]||[]); e.target.checked?arr.add(ti):arr.delete(ti);
+      taskState={[todayKey]:[...arr]}; store.set("tasks",taskState); renderTasks();
+      if(arr.size===4){ toast("Bugünün bütün görevlerini tamamladın. Allah kabul etsin!"); }
+    });
+    ul.appendChild(li);
+  });
+  const n=(taskState[todayKey]||[]).length;
+  document.getElementById("taskNote").textContent = n===4 ? "Hepsi tamam! Allah kabul etsin." : `${n} / 4 tamamlandı. Yarın yeni görevler gelecek.`;
+  document.getElementById("taskDate").textContent = new Date().toLocaleDateString("tr-TR",{weekday:"long",day:"numeric",month:"long"});
+}
+renderTasks();
+
+/* esma */
+const ESMA=[
+ ["Er-Rahmân","الرَّحْمَٰنُ","Dünyada bütün yaratılmışlara merhamet eden.","Rahmân"],
+ ["Er-Rahîm","الرَّحِيمُ","Ahirette müminlere özel olarak merhamet eden.","Rahîm"],
+ ["El-Melik","الْمَلِكُ","Bütün kâinatın gerçek sahibi ve hükümdarı.","Melik"],
+ ["El-Kuddûs","الْقُدُّوسُ","Her türlü eksiklikten uzak, tertemiz olan.","Kuddûs"],
+ ["Es-Selâm","السَّلَامُ","Esenlik veren, kullarını tehlikelerden koruyan.","Selâm"],
+ ["El-Mü'min","الْمُؤْمِنُ","Güven veren, kalplere iman ışığı yerleştiren.","Mü'min"],
+ ["El-Hâlık","الْخَالِقُ","Her şeyi yoktan yaratan.","Hâlık"],
+ ["El-Ğaffâr","الْغَفَّارُ","Günahları tekrar tekrar bağışlayan.","Ğaffâr"],
+ ["Er-Rezzâk","الرَّزَّاقُ","Bütün canlıların rızkını veren.","Rezzâk"],
+ ["El-Alîm","الْعَلِيمُ","Her şeyi en ince ayrıntısıyla bilen.","Alîm"],
+ ["Es-Semî'","السَّمِيعُ","Her sesi, her duayı işiten.","Semî'"],
+ ["El-Basîr","الْبَصِيرُ","Her şeyi gören.","Basîr"],
+ ["El-Latîf","اللَّطِيفُ","Lütfu bol, en ince işleri bilen.","Latîf"],
+ ["El-Halîm","الْحَلِيمُ","Hemen cezalandırmayan, yumuşak davranan.","Halîm"],
+ ["El-Ğafûr","الْغَفُورُ","Bağışlaması çok olan.","Ğafûr"],
+ ["Eş-Şekûr","الشَّكُورُ","Az amele çok sevap veren.","Şekûr"],
+ ["El-Kerîm","الْكَرِيمُ","Cömertliği sonsuz olan.","Kerîm"],
+ ["El-Mucîb","الْمُجِيبُ","Dualara cevap veren.","Mucîb"],
+ ["El-Vedûd","الْوَدُودُ","Kullarını seven ve sevilmeye en layık olan.","Vedûd"],
+ ["El-Hakîm","الْحَكِيمُ","Her işi hikmetli ve yerinde olan.","Hakîm"],
+ ["El-Vekîl","الْوَكِيلُ","Kendisine güvenilen, işleri en güzel şekilde yürüten.","Vekîl"],
+ ["El-Hayy","الْحَيُّ","Ezelî ve ebedî diri olan.","Hayy"],
+ ["El-Kayyûm","الْقَيُّومُ","Her şeyi ayakta tutan, varlığı kendinden olan.","Kayyûm"],
+ ["Es-Sabûr","الصَّبُورُ","Çok sabırlı olan.","Sabûr"],
+ ["El-Afüvv","الْعَفُوُّ","Affı çok olan, günahları silen.","Afüvv"],
+ ["Er-Raûf","الرَّءُوفُ","Çok şefkatli olan.","Raûf"],
+ ["En-Nûr","النُّورُ","Âlemleri nurlandıran.","Nûr"],
+ ["El-Hâdî","الْهَادِي","Doğru yolu gösteren.","Hâdî"],
+ ["El-Vehhâb","الْوَهَّابُ","Karşılık beklemeden bol bol veren.","Vehhâb"],
+ ["Et-Tevvâb","التَّوَّابُ","Tövbeleri kabul eden.","Tevvâb"]
+];
+(function(){ const e=ESMA[dayNo % ESMA.length];
+  document.getElementById("esAr").textContent=e[1]; document.getElementById("esNm").textContent=e[0];
+  document.getElementById("esMn").textContent=e[2]; document.getElementById("esCall").textContent=e[3]; })();
+
+/* hatim */
+let cuz=new Set(store.get("cuz",[]));
+const cuzBox=document.getElementById("cuz");
+for(let i=1;i<=30;i++){
+  const b=document.createElement("button"); b.type="button"; b.textContent=i; b.setAttribute("aria-label",`${i}. cüz`);
+  b.onclick=()=>{ cuz.has(i)?cuz.delete(i):cuz.add(i); store.set("cuz",[...cuz]); renderCuz(); if(cuz.size===30){ sparkleAt(cuzBox); toast("Hatmini tamamladın. Allah kabul etsin!"); } };
+  cuzBox.appendChild(b);
+}
+function renderCuz(){
+  [...cuzBox.children].forEach((b,i)=>b.setAttribute("aria-pressed",String(cuz.has(i+1))));
+  document.getElementById("hatimPct").textContent=`${cuz.size} / 30 cüz`;
+  document.getElementById("hatimBar").style.width=(cuz.size/30*100)+"%";
+}
+renderCuz();
+
+/* ---------- Hikâye Kütüphanesi ---------- */
+const CATS=["Peygamberler","Peygamberimiz","Sahabeler","Kur'an Kıssaları","Ahlak ve Hikmet"];
+const DAY_CAT={"Hira'da İlk Vahiy":1,"Hz. Nuh'un Gemisi":0,"Balığın Karnında Hz. Yunus":0,"Hz. İbrahim ve Ateş":0,"Sevr Mağarası":1,"Bedir Günü":1,"Mekke'nin Fethi":1,"Hz. Ömer ve Un Çuvalı":2,"Denizin Yarılması":0,"Esen Rüzgârdan Daha Cömert":1};
+const LIB=[
+ {c:0,t:`Hz. Âdem ve Meleklerin Secdesi`,r:`Bakara Suresi, 30–37. ayetler`,s:[
+  `Allah meleklere yeryüzünde bir halife yaratacağını bildirdi. Sonra Hz. Âdem'i topraktan yarattı ve ona bütün varlıkların isimlerini öğretti. Melekler bu isimleri bilemedi, Âdem ise hepsini tek tek söyledi.`,
+  `Allah meleklere Âdem'e secde etmelerini emretti. Bütün melekler secde etti, sadece İblis "Ben ondan üstünüm" diyerek kibirlendi ve reddetti.`,
+  `Âdem ve Havva cennete yerleştirildi, ama yasak ağaçtan yiyince yeryüzüne indirildiler. İkisi de pişman olup tövbe etti ve Allah tövbelerini kabul etti.`],
+  d:`İnsanı değerli kılan ilimdir. Kibir İblis'i yıktı, tövbe ise Âdem'i kurtardı.`},
+ {c:0,t:`Hz. Yusuf ve Kardeşleri`,r:`Yûsuf Suresi`,s:[
+  `Hz. Yakup'un oğlu Yusuf rüyasında on bir yıldızın, güneşin ve ayın kendisine secde ettiğini gördü. Babasının ona olan sevgisini kıskanan kardeşleri onu bir kuyuya attılar ve babalarına "Onu kurt yedi" dediler.`,
+  `Bir kervan Yusuf'u kuyudan çıkarıp Mısır'da köle olarak sattı. Yusuf iftiraya uğradı, yıllarca zindanda kaldı, ama hiç sabrını kaybetmedi. Kralın rüyasını yorumlayınca serbest bırakıldı ve Mısır'ın hazinelerinin başına geçti.`,
+  `Kıtlık yıllarında kardeşleri yiyecek almak için Mısır'a geldi. Yusuf kendini tanıttığında utanç içindeydiler. Ama Yusuf onları affetti ve "Bugün size kınama yok" dedi. Sonunda babasıyla da kavuştu.`],
+  ar:`لَا تَثْرِيبَ عَلَيْكُمُ الْيَوْمَ ۖ يَغْفِرُ اللَّهُ لَكُمْ ۖ وَهُوَ أَرْحَمُ الرَّاحِمِينَ`,art:`Bugün size kınama yok. Allah sizi bağışlasın. O, merhametlilerin en merhametlisidir. (Yûsuf, 92)`,
+  d:`Sabır sonunda selamete çıkar. Kur'an bu kıssaya "kıssaların en güzeli" der. Peygamberimiz de Mekke'nin fethinde aynı sözlerle affetti.`},
+ {c:0,t:`Hz. Süleyman ve Karınca`,r:`Neml Suresi, 18–19. ayetler`,s:[
+  `Allah Hz. Süleyman'a büyük bir mülk verdi; o, hayvanların dilini de anlardı. Bir gün insanlardan, cinlerden ve kuşlardan oluşan ordusuyla bir vadiden geçiyordu.`,
+  `Küçük bir karınca orduyu görünce arkadaşlarına seslendi: "Ey karıncalar! Yuvalarınıza girin, Süleyman ve askerleri farkında olmadan sizi ezmesin."`,
+  `Süleyman karıncanın sözünü duyunca gülümsedi. Ordusunu durdurdu ve Allah'a, kendisine verdiği nimetlere şükretmeyi nasip etmesi için dua etti.`],
+  ar:`يَا أَيُّهَا النَّمْلُ ادْخُلُوا مَسَاكِنَكُمْ لَا يَحْطِمَنَّكُمْ سُلَيْمَانُ وَجُنُودُهُ وَهُمْ لَا يَشْعُرُونَ`,art:`Ey karıncalar! Yuvalarınıza girin ki Süleyman ve orduları farkında olmadan sizi ezmesin.`,
+  d:`En güçlü kral bile küçük bir karıncanın hakkını gözetti. Gücü olan, zayıfı korumalıdır.`},
+ {c:0,t:`Hz. Süleyman ve Sebe Melikesi`,r:`Neml Suresi, 20–44. ayetler`,s:[
+  `Hz. Süleyman bir gün kuşlarını yoklarken hüdhüdü göremedi. Hüdhüd döndüğünde büyük bir haber getirdi: Sebe ülkesinde bir kraliçe vardı ve halkı Allah'ı bırakıp güneşe tapıyordu.`,
+  `Süleyman kraliçeye "Rahmân ve Rahîm olan Allah'ın adıyla" başlayan bir mektup gönderdi ve onu Allah'a iman etmeye çağırdı. Kraliçe önce hediyeler yolladı, ama Süleyman hediyeleri kabul etmedi.`,
+  `Sonunda kraliçe Süleyman'ı ziyarete geldi. Gördüğü mucizeler karşısında hakikati anladı ve "Süleyman ile birlikte âlemlerin Rabbi Allah'a teslim oldum" dedi.`],
+  d:`Küçük bir kuş bile doğruyu haber vererek büyük bir hayra vesile olabilir. Davet zorla değil, güzellikle yapılır.`},
+ {c:0,t:`Hz. Eyyûb'un Sabrı`,r:`Enbiyâ Suresi, 83–84. ayetler`,s:[
+  `Hz. Eyyûb'un çok malı, sağlıklı bir bedeni ve kalabalık bir ailesi vardı. Allah onu bunları elinden alarak sınadı: malını kaybetti, çocuklarını kaybetti ve yıllarca ağır bir hastalık çekti.`,
+  `Bütün bu sıkıntılara rağmen Eyyûb hiç isyan etmedi. Dilinden şükür ve zikir eksik olmadı.`,
+  `Sonunda Rabbine yalvardı: "Başıma bu dert geldi. Sen merhametlilerin en merhametlisisin." Allah duasını kabul etti, ona şifa verdi ve kaybettiklerinin kat kat fazlasını geri verdi.`],
+  ar:`أَنِّي مَسَّنِيَ الضُّرُّ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ`,art:`Başıma bu dert geldi. Sen ise merhametlilerin en merhametlisisin.`,
+  d:`Türkçede "Eyyûb sabrı" diye bir deyim vardır. Zorlukta şikâyet yerine dua etmek imanın göstergesidir.`},
+ {c:0,t:`Hz. Dâvûd ve Câlût`,r:`Bakara Suresi, 249–251. ayetler`,s:[
+  `Zalim Câlût ve dev gibi askerleri İsrailoğullarını korkutuyordu. Tâlût komutasındaki küçük ordu onlarla savaşmak için yola çıktı. Yolda bir nehirden geçerken çoğu asker sabredemeyip emre uymadı ve geri kaldı.`,
+  `Geride kalan az sayıdaki mümin, "Nice az topluluk, Allah'ın izniyle çok topluluğa galip gelmiştir" dedi.`,
+  `Ordunun içindeki genç Dâvûd, sapanıyla attığı bir taşla Câlût'u yere serdi. Allah Dâvûd'a sonra krallık ve peygamberlik verdi.`],
+  d:`Cesaret boyla posla değil imanla ilgilidir. Allah'a güvenen küçük bir genç bile büyük zalimleri yenebilir.`},
+ {c:0,t:`Hz. Hacer ve Zemzem`,r:`Buhârî, Enbiyâ 9`,s:[
+  `Hz. İbrahim, Allah'ın emriyle eşi Hacer'i ve bebek İsmail'i Mekke'nin ıssız vadisine bıraktı. Hacer "Bunu sana Allah mı emretti?" diye sordu. İbrahim "Evet" deyince, "Öyleyse Allah bizi zayi etmez" dedi.`,
+  `Suları bitince bebek susuzluktan ağlamaya başladı. Hacer su bulmak için Safâ ve Merve tepeleri arasında yedi kez koştu.`,
+  `Sonunda bebeğin yanında topraktan su fışkırdı: Zemzem. Hacer suyun etrafını çevirdi. Bu su sayesinde vadiye insanlar yerleşti ve Mekke şehri doğdu. Hacılar bugün hâlâ Safâ ile Merve arasında Hacer'in koşusunu tekrarlar.`],
+  d:`Tevekkül, elinden geleni yapıp sonucu Allah'a bırakmaktır. Hacer hem güvendi hem de koştu.`},
+ {c:0,t:`Hz. Meryem ve Hurma Ağacı`,r:`Meryem Suresi, 16–33. ayetler`,s:[
+  `Hz. Meryem iffetli ve ibadete düşkün bir kızdı. Bir gün ona bir melek geldi ve Allah'ın izniyle babasız bir oğlu olacağını müjdeledi.`,
+  `Doğum vakti gelince Meryem bir hurma ağacının dibine sığındı. Ona seslenildi: "Üzülme! Rabbin ayağının altında bir dere akıttı. Hurma dalını kendine doğru salla, üzerine taze hurmalar dökülsün."`,
+  `Meryem bebeği alıp halkının yanına döndüğünde onu suçladılar. Meryem sadece bebeği işaret etti. Beşikteki İsa konuştu: "Ben Allah'ın kuluyum. O bana kitap verdi ve beni peygamber yaptı."`],
+  d:`Allah iffetli kullarını yalnız bırakmaz. İftar hurmayla açılır; bu sünnetin güzel bir hatırlatıcısıdır.`},
+ {c:0,t:`Hz. Sâlih ve Dişi Deve`,r:`Şems Suresi, 11–15. ayetler`,s:[
+  `Semûd kavmi kayalardan saraylar oyan güçlü bir halktı, ama Allah'ı unutmuşlardı. Hz. Sâlih onları imana çağırdı. Onlar bir mucize istediler.`,
+  `Allah kayanın içinden bir dişi deve çıkardı. Sâlih uyardı: "Bu, Allah'ın devesidir. Ona dokunmayın; bir gün su onun, bir gün sizindir."`,
+  `Kavmin en azgınları deveyi öldürdü ve alay ettiler. Üç gün sonra korkunç bir ses geldi ve Semûd kavmi helak oldu. Sâlih ve iman edenler kurtuldu.`],
+  d:`Hayvanlara zulmetmek Allah'ın gazabını çeker. Uyarıları ciddiye almak gerekir.`},
+ {c:0,t:`Hz. Zekeriyyâ'nın Duası`,r:`Meryem Suresi, 2–11. ayetler`,s:[
+  `Hz. Zekeriyyâ çok yaşlanmıştı, eşi de çocuk sahibi olamıyordu. Ama Zekeriyyâ Allah'ın rahmetinden hiç ümit kesmedi.`,
+  `Bir gece mihrabında gizlice dua etti: "Rabbim! Kemiklerim zayıfladı, saçım ağardı. Ama sana dua edip de hiç eli boş dönmedim."`,
+  `Melekler ona müjde verdi: Yahyâ adında bir oğlu olacaktı. Bu ismi daha önce kimse almamıştı. Yahyâ büyüyünce o da bir peygamber oldu.`],
+  ar:`رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنتَ خَيْرُ الْوَارِثِينَ`,art:`Rabbim! Beni yalnız bırakma. Sen varislerin en hayırlısısın. (Enbiyâ, 89)`,
+  d:`Hiçbir dua için "artık çok geç" denmez. Allah'ın gücü yaşa ve imkâna bağlı değildir.`},
+ {c:0,t:`Hz. Musa ve Hızır`,r:`Kehf Suresi, 60–82. ayetler`,s:[
+  `Hz. Musa'ya kendisinden daha bilgili bir kul olduğu bildirildi. Musa onu bulmak için uzun bir yolculuğa çıktı ve iki denizin birleştiği yerde Hızır ile karşılaştı. Hızır, "Benimle beraber olmaya sabredemezsin" dedi.`,
+  `Hızır, yolculukta tuhaf şeyler yaptı: Bindikleri gemiyi deldi, yıkılmak üzere olan bir duvarı karşılıksız onardı. Musa her seferinde dayanamayıp itiraz etti.`,
+  `Sonunda Hızır sırları açıkladı: Gemiyi zalim bir kral el koymasın diye kusurlu yapmıştı. Duvarın altında iki yetimin hazinesi vardı; onlar büyüyene kadar korunması gerekiyordu.`],
+  d:`Başımıza gelen bazı olayların hikmetini hemen göremeyiz. Kötü görünen bir şeyin ardında büyük bir hayır olabilir.`},
+ {c:1,t:`Hacerü'l-Esved ve el-Emîn`,r:`Siyer · Peygamberlikten önce`,s:[
+  `Peygamberimiz otuz beş yaşındayken Kâbe yeniden inşa ediliyordu. Sıra Hacerü'l-Esved'i yerine koymaya gelince kabileler arasında büyük bir kavga çıktı. Herkes bu şerefi kendi kabilesi için istiyordu.`,
+  `Sonunda Kâbe'ye ilk girecek kişinin hakemliğine razı oldular. Kapıdan giren Hz. Muhammed'di. Herkes sevinçle "İşte el-Emîn, güvenilir kişi geldi!" dedi.`,
+  `Peygamberimiz bir örtü serdi, taşı ortasına koydu ve her kabile reisinin örtünün bir ucundan tutmasını istedi. Taş yerine kadar birlikte taşındı, sonra kendi eliyle yerine yerleştirdi.`],
+  d:`Dürüstlük insana güven kazandırır. Akıllı bir çözüm kavgayı barışa çevirebilir.`},
+ {c:1,t:`Tâif Yolculuğu`,r:`Buhârî, Bed'ü'l-halk 7`,s:[
+  `Mekkeliler İslam'a karşı çok sertleşince Peygamberimiz Tâif şehrine gitti ve halkı imana davet etti. Ama Tâifliler onu dinlemediler. Çocuklarını ve kölelerini peşine takıp ona taş attırdılar. Mübarek ayakları kanadı.`,
+  `Peygamberimiz bir bağa sığınıp Allah'a dua etti. O sırada Cebrail dağlar meleğiyle geldi: "İstersen bu iki dağı onların üzerine kapatayım."`,
+  `Peygamberimiz şöyle cevap verdi: "Hayır! Umarım Allah onların neslinden yalnız Allah'a ibadet eden insanlar çıkarır." Gerçekten de yıllar sonra Tâif halkı Müslüman oldu.`],
+  d:`Kötülüğe karşı bile beddua yerine hayır dilemek Peygamber ahlakıdır.`},
+ {c:1,t:`Ağlayan Hurma Kütüğü`,r:`Buhârî, Menâkıb 25`,s:[
+  `Medine'deki mescitte Peygamberimiz hutbe verirken bir hurma kütüğüne yaslanırdı. Cemaat çoğalınca onun için bir minber yapıldı.`,
+  `Peygamberimiz ilk kez minbere çıktığı gün, mescittekiler kütükten bir bebeğin ağlaması gibi bir inilti duydular.`,
+  `Peygamberimiz minberden indi, kütüğün yanına gidip ona sarıldı. Kütük, susturulan bir çocuk gibi yavaş yavaş sustu. Bu kütüğe "Hannâne", yani inleyen denildi.`],
+  d:`Bir ağaç kütüğü bile Peygamberimize bu kadar özlem duyduysa, onu sevmeye ve sünnetine uymaya biz daha çok layığız.`},
+ {c:1,t:`Secdedeki Torunlar`,r:`Nesâî, Tatbîk 82`,s:[
+  `Peygamberimiz bir gün cemaate namaz kıldırıyordu. Secdeye vardığında küçük torunu Hz. Hüseyin (bazı rivayetlerde Hz. Hasan) gelip sırtına çıktı.`,
+  `Peygamberimiz secdeyi o kadar uzattı ki cemaat bir şey olduğunu ya da vahiy geldiğini düşündü.`,
+  `Namazdan sonra sorduklarında şöyle dedi: "Oğlum sırtıma bindi, acele ettirip onu indirmek istemedim."`],
+  d:`Peygamberimiz çocuklara çok şefkatliydi. Merhamet, ibadetin içinde bile yer bulur.`},
+ {c:1,t:`İsrâ ve Mi'râc`,r:`İsrâ Suresi, 1. ayet · Necm Suresi`,s:[
+  `Peygamberimizin hayatındaki en zor yıllardan biriydi; amcası Ebû Tâlib'i ve eşi Hz. Hatice'yi kaybetmişti. Bir gece Allah onu Mekke'deki Mescid-i Harâm'dan Kudüs'teki Mescid-i Aksâ'ya götürdü.`,
+  `Mescid-i Aksâ'da bütün peygamberlere imam oldu. Oradan göklere yükseldi ve her katta başka peygamberlerle karşılaştı.`,
+  `Bu gecede Müslümanlara beş vakit namaz farz kılındı. Sabah Mekke'ye döndüğünde Hz. Ebû Bekir hiç tereddüt etmeden "O söylüyorsa doğrudur" dedi ve "Sıddîk" lakabını aldı.`],
+  ar:`سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى`,art:`Kulunu bir gece Mescid-i Harâm'dan Mescid-i Aksâ'ya yürüten Allah'ın şanı yücedir.`,
+  d:`Namaz, Mi'râc'ın hediyesidir. Her namaz Allah ile buluşmadır.`},
+ {c:2,t:`Hz. Bilâl: "Ehad, Ehad!"`,r:`Siyer · Mekke dönemi`,s:[
+  `Hz. Bilâl, Ümeyye bin Halef'in Habeşli bir kölesiydi. Müslüman olduğunu öğrenen efendisi ona korkunç işkenceler yaptı.`,
+  `Mekke'nin kızgın çölünde onu sırtüstü yatırır, göğsüne büyük bir kaya koyardı. "Muhammed'in dinini bırak" derlerdi. Bilâl ise her seferinde "Ehad, Ehad!", yani "Allah bir, Allah bir!" diye karşılık verirdi.`,
+  `Hz. Ebû Bekir onu satın alıp azat etti. Yıllar sonra Peygamberimiz Bilâl'i İslam'ın ilk müezzini yaptı. Mekke'nin fethinde Kâbe'nin üzerine çıkıp ezanı o okudu.`],
+  d:`İslam'da üstünlük renkle, soyla veya zenginlikle değil takvayla ölçülür.`},
+ {c:2,t:`Hz. Ebû Bekir'in Bütün Malı`,r:`Tirmizî, Menâkıb 16`,s:[
+  `Tebük seferi için yardım toplanıyordu. Hz. Ömer, "Bugün Ebû Bekir'i geçeceğim" diyerek malının yarısını getirdi.`,
+  `Peygamberimiz sordu: "Ailene ne bıraktın?" Ömer "Bunun kadarını" dedi. Sonra Hz. Ebû Bekir geldi; bütün malını getirmişti.`,
+  `Peygamberimiz ona da sordu: "Ailene ne bıraktın?" Ebû Bekir cevap verdi: "Onlara Allah'ı ve Resulünü bıraktım." Hz. Ömer, "Onu hiçbir şeyde geçemeyeceğim" dedi.`],
+  d:`Hayırda yarışmak güzeldir. Asıl zenginlik Allah'a güvenmektir.`},
+ {c:2,t:`Hz. Osman ve Rûme Kuyusu`,r:`Tirmizî, Menâkıb 18`,s:[
+  `Müslümanlar Medine'ye hicret ettiğinde şehirde tatlı su azdı. Rûme kuyusunun sahibi suyu çok pahalıya satıyordu.`,
+  `Peygamberimiz, "Kim Rûme kuyusunu satın alıp Müslümanlara bağışlarsa, ona cennette daha hayırlısı vardır" buyurdu.`,
+  `Hz. Osman kuyuyu kendi parasıyla satın aldı ve herkesin ücretsiz kullanmasına açtı. Bu, İslam tarihindeki ilk vakıflardan biri sayılır.`],
+  d:`Sadaka-i câriye, sen dünyadan ayrıldıktan sonra da sevap kazandıran iyiliktir: bir kuyu, bir çeşme, bir kitap.`},
+ {c:2,t:`Hz. Ali ve Hicret Gecesi`,r:`Siyer · Hicret`,s:[
+  `Mekkeli müşrikler Peygamberimizi öldürmek için bir plan yaptılar. Her kabileden bir genç, gece evini kuşatacaktı.`,
+  `Allah Peygamberine hicret izni verdi. Peygamberimiz, genç Hz. Ali'den kendi yatağında yatmasını ve yeşil hırkasıyla örtünmesini istedi. Ali, hayatı tehlikede olduğu halde hiç tereddüt etmedi.`,
+  `Sabah müşrikler eve daldıklarında yatakta Ali'yi buldular. Peygamberimiz çoktan yola çıkmıştı. Ali, ertesi günlerde kendisine emanet edilen eşyaları sahiplerine teslim etti ve sonra o da Medine'ye hicret etti.`],
+  d:`Peygamberimiz düşmanlarının emanetlerini bile sahiplerine geri verdirdi. Emanete sadakat imandandır.`},
+ {c:2,t:`Işığı Söndüren Ev Sahibi`,r:`Buhârî, Menâkıbü'l-Ensâr 10 · Haşr, 9`,s:[
+  `Peygamberimizin yanına aç bir misafir geldi. Ensardan bir sahabi (rivayete göre Ebû Talha) onu evine götürdü. Ama evde sadece çocuklara yetecek kadar yemek vardı.`,
+  `Eşine, "Çocukları oyalayıp uyut. Yemeği getirince lambayı düzeltiyormuş gibi yapıp söndür" dedi. Karanlıkta ev sahipleri yiyormuş gibi yaptılar; misafir doyana kadar yedi, onlar aç yattılar.`,
+  `Sabah Peygamberimiz sahabiye, "Allah bu gece yaptığınızdan hoşnut oldu" dedi ve bu ayet indi: "Kendileri ihtiyaç içinde olsalar bile onları kendilerine tercih ederler."`],
+  ar:`وَيُؤْثِرُونَ عَلَىٰ أَنفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌ`,art:`Kendileri ihtiyaç içinde olsalar bile onları kendilerine tercih ederler.`,
+  d:`Buna "îsâr" denir: başkasını kendine tercih etmek. Bir iftar sofrasını paylaşmak da bunun güzel bir örneğidir.`},
+ {c:3,t:`Ashâb-ı Kehf`,r:`Kehf Suresi, 9–26. ayetler`,s:[
+  `Zalim bir kralın putlara tapmayı zorunlu kıldığı bir şehirde birkaç genç Allah'a inanıyordu. İmanlarını korumak için şehirden kaçıp bir mağaraya sığındılar. Köpekleri de yanlarındaydı.`,
+  `Mağarada dua ettiler: "Rabbimiz! Bize katından bir rahmet ver ve işimizde bize doğruyu kolaylaştır." Allah onlara derin bir uyku verdi. Tam üç yüz dokuz yıl uyudular.`,
+  `Uyandıklarında sadece bir gün uyuduklarını sandılar. Biri yiyecek almak için şehre indi ve elindeki eski parayla dikkat çekti. Artık şehir halkı Allah'a inanıyordu.`],
+  ar:`رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا`,art:`Rabbimiz! Bize katından bir rahmet ver ve işimizde bize doğruyu kolaylaştır.`,
+  d:`İmanını korumak için çaba gösterene Allah yol açar. Cuma günü Kehf Suresi'ni okumak sünnettir.`},
+ {c:3,t:`Fil Ordusu`,r:`Fîl Suresi`,s:[
+  `Peygamberimizin doğduğu yıl, Yemen valisi Ebrehe Kâbe'yi yıkmak için önünde fillerin yürüdüğü büyük bir orduyla Mekke'ye geldi.`,
+  `Mekke'nin reisi Abdülmuttalib, Ebrehe'den sadece elinden alınan develerini istedi. Ebrehe şaşırınca, "Ben develerin sahibiyim. Kâbe'nin de bir sahibi var, onu O korur" dedi.`,
+  `Ordu Mekke'ye yaklaşınca öndeki fil çöküp ilerlemedi. Sonra gökyüzünde sürü sürü kuşlar belirdi ve orduya pişmiş çamurdan taşlar attılar. Ordu yenilip çiğnenmiş ekin yaprağı gibi oldu.`],
+  ar:`أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ`,art:`Rabbinin fil sahiplerine ne yaptığını görmedin mi?`,
+  d:`Allah dilediğinde en küçük kuşla en büyük orduyu yenebilir. Bu olaydan dolayı o yıla "Fil Yılı" denir.`},
+ {c:3,t:`Zülkarneyn ve Set`,r:`Kehf Suresi, 83–98. ayetler`,s:[
+  `Zülkarneyn, Allah'ın büyük güç verdiği adil bir hükümdardı. Doğuya ve batıya uzun yolculuklar yaptı ve gittiği her yerde zalimleri cezalandırıp iyileri korudu.`,
+  `İki dağın arasındaki bir halk ona şikâyette bulundu: Ye'cûc ve Me'cûc topraklarında bozgunculuk yapıyordu. Ona vergi teklif ettiler.`,
+  `Zülkarneyn parayı reddetti: "Rabbimin bana verdiği daha hayırlıdır. Siz bana güçle yardım edin." Halkla birlikte demir kütleleri yığdı, üzerine erimiş bakır döktü ve dev bir set yaptı. Sonra "Bu, Rabbimden bir rahmettir" dedi.`],
+  d:`Gerçek lider gücünü halkına hizmet için kullanır ve başarıyı kendine değil Allah'a nispet eder.`},
+ {c:3,t:`Lokman'ın Oğluna Öğütleri`,r:`Lokmân Suresi, 12–19. ayetler`,s:[
+  `Allah Lokman'a hikmet verdi. Lokman oğluna şöyle öğüt verdi: "Yavrum! Allah'a ortak koşma. Bil ki iyilik ya da kötülük bir hardal tanesi kadar olsa ve bir kayanın içinde gizlense bile Allah onu ortaya çıkarır."`,
+  `"Namazı kıl, iyiliği emret, kötülükten alıkoy ve başına gelene sabret."`,
+  `"İnsanlara kibirle yüzünü çevirme, yeryüzünde böbürlenerek yürüme. Yürüyüşünde ölçülü ol, sesini alçalt."`],
+  ar:`يَا بُنَيَّ أَقِمِ الصَّلَاةَ وَأْمُرْ بِالْمَعْرُوفِ وَانْهَ عَنِ الْمُنكَرِ وَاصْبِرْ عَلَىٰ مَا أَصَابَكَ`,art:`Yavrucuğum! Namazı kıl, iyiliği emret, kötülükten alıkoy ve başına gelene sabret.`,
+  d:`Bu öğütler bir anne babanın çocuğuna bırakabileceği en güzel mirastır. Bugün birini sesini alçaltarak dinle.`},
+ {c:3,t:`Kârûn'un Hazineleri`,r:`Kasas Suresi, 76–82. ayetler`,s:[
+  `Kârûn, Hz. Musa'nın kavmindendi ve o kadar zengindi ki hazinelerinin anahtarlarını güçlü bir grup insan zor taşırdı.`,
+  `Bilgeler ona öğüt verdi: "Şımarma. Allah'ın sana verdiğiyle ahireti kazan, dünyadan da payını unutma. Allah sana iyilik ettiği gibi sen de iyilik et." Kârûn ise "Bu servet bana kendi bilgim sayesinde verildi" dedi.`,
+  `Bir gün bütün süsüyle halkın karşısına çıktı. Bazıları onu kıskandı. Sonra Allah Kârûn'u da sarayını da yerin dibine geçirdi. Onu kıskananlar "İyi ki biz onun gibi olmamışız" dediler.`],
+  d:`Mal ve servet bir emanettir. Kibir ve cimrilik insanı yıkar; şükür ve paylaşmak ise bereket getirir.`},
+ {c:4,t:`Susuz Köpeğe Su Veren Adam`,r:`Buhârî, Şirb 9`,s:[
+  `Peygamberimiz anlattı: Bir adam yolda giderken çok susadı. Bir kuyu buldu, içine inip su içti ve çıktı.`,
+  `Kuyunun yanında susuzluktan dili dışarı sarkmış, ıslak toprağı yalayan bir köpek gördü. "Bu köpek de benim gibi susamış" dedi.`,
+  `Tekrar kuyuya indi, mestini suyla doldurdu, ağzıyla tutarak yukarı çıktı ve köpeğe içirdi. Allah bu iyiliğinden dolayı ondan razı oldu ve günahlarını bağışladı. Sahabiler sordu: "Hayvanlar için de bize sevap var mı?" Peygamberimiz "Her canlıya yapılan iyilikte sevap vardır" buyurdu.`],
+  d:`Küçük görünen bir iyilik Allah katında çok büyük olabilir. Sıcak günlerde kuşlara su koymayı unutma.`},
+ {c:4,t:`Mağaradaki Üç Kişi`,r:`Buhârî, Edeb 5`,s:[
+  `Peygamberimiz anlattı: Üç kişi yağmurdan korunmak için bir mağaraya girdi. Dağdan bir kaya yuvarlandı ve mağaranın ağzını kapattı.`,
+  `"Bizi ancak samimiyetle yaptığımız iyiliklerle dua etmek kurtarır" dediler. Biri, anne babasına süt getirip uyandırmamak için sabaha kadar elinde bardakla beklediğini anlattı. Kaya biraz açıldı. İkincisi, harama yaklaşma fırsatı bulduğu halde Allah korkusuyla vazgeçtiğini anlattı. Kaya biraz daha açıldı.`,
+  `Üçüncüsü, işçisinin bırakıp gittiği ücreti yıllarca işletip büyüttüğünü ve döndüğünde hepsini ona verdiğini anlattı. Kaya tamamen açıldı ve üçü de dışarı çıktı.`],
+  d:`Kimse görmezken yapılan ihlaslı iyilikler, zor günde insanın en büyük sermayesidir.`},
+ {c:4,t:`Yüz Kişiyi Öldüren Adamın Tövbesi`,r:`Buhârî, Enbiyâ 54 · Müslim, Tevbe 46`,s:[
+  `Peygamberimiz anlattı: Geçmiş ümmetlerde doksan dokuz kişiyi öldürmüş bir adam vardı. Pişman oldu ve bir rahibe "Tövbem kabul olur mu?" diye sordu. Rahip "Hayır" deyince onu da öldürdü.`,
+  `Sonra bir âlime gitti. Âlim, "Seninle tövbenin arasına kim girebilir? Ama bu kötü yeri terk et ve iyi insanların yaşadığı şu köye git" dedi.`,
+  `Adam yola çıktı, ama yolun ortasında öldü. Rahmet ve azap melekleri onun hakkında tartıştı. Mesafeyi ölçtüler: Adam iyi insanların köyüne bir karış daha yakındı. Rahmet melekleri onu aldı.`],
+  d:`Allah'ın rahmetinden asla ümit kesilmez. Tövbe, ortamını değiştirmeyi ve iyilerle beraber olmayı da gerektirir.`},
+ {c:4,t:`Bakkaldaki Dürüstlük`,r:`Ahlak hikâyesi · Halk anlatısı`,s:[
+  `Bir gün küçük bir çocuk mahalle bakkalından şeker aldı. Bakkal amca yanlışlıkla ona fazla para üstü verdi.`,
+  `Çocuk eve dönerken parayı saydı ve fazlalığı fark etti. Kimse görmemişti; o parayla bir şeker daha alabilirdi. Ama annesinin sözünü hatırladı: "İnsanlar görmese de Allah görür."`,
+  `Geri döndü ve parayı bakkala uzattı. Bakkal çok duygulandı ve o günden sonra çocuğa "küçük emîn" demeye başladı. Mahallede herkes ona güvenir oldu.`],
+  d:`Peygamberimiz Mekke'de "el-Emîn" diye tanınırdı. Dürüstlük küçük şeylerde başlar.`}
+];
+DAYS.filter(d=>d.s).forEach(d=>LIB.push({c:DAY_CAT[d.t] ?? 4, t:d.t, r:d.r, s:d.s, ar:d.ar, art:d.art, d:d.d}));
+LIB.sort((a,b)=>a.c-b.c);
+
+let libCat=-1, libList=[], libIdx=0, libSeen=new Set(store.get("seen",[]));
+document.getElementById("libCount").textContent=`${LIB.length} islami hikâye`;
+const catBox=document.getElementById("libCats");
+["Hepsi",...CATS].forEach((name,i)=>{
+  const b=document.createElement("button"); b.type="button"; b.className="chip"; b.textContent=name;
+  b.onclick=()=>{ libCat=i-1; renderLib(); }; catBox.appendChild(b);
+});
+const libQ=document.getElementById("libQ");
+libQ.addEventListener("input",renderLib);
+const norm = s => s.toLocaleLowerCase("tr").normalize("NFD").replace(/[̀-ͯ]/g,"");
+function renderLib(){
+  [...catBox.children].forEach((b,i)=>b.setAttribute("aria-pressed",String(i-1===libCat)));
+  const q=norm(libQ.value.trim());
+  libList=LIB.filter(x=>(libCat<0||x.c===libCat) && (!q || norm(x.t+" "+x.s.join(" ")+" "+x.r).includes(q)));
+  const g=document.getElementById("libGrid"); g.innerHTML="";
+  libList.forEach((x,i)=>{
+    const b=document.createElement("button"); b.type="button"; b.className="story-card";
+    b.innerHTML=`<span class="cat">${CATS[x.c]}</span><h3>${esc(x.t)}</h3><span class="ref">${esc(x.r)}</span><p class="teaser">${esc(x.s[0])}</p>
+      <span class="go"><span>Oku ›</span>${libSeen.has(x.t)?'<span class="seen">Okundu</span>':""}</span>`;
+    b.onclick=()=>openStory(i); g.appendChild(b);
+  });
+  document.getElementById("libEmpty").hidden = libList.length>0;
+  document.getElementById("libRead").textContent=`${[...libSeen].filter(t=>LIB.some(x=>x.t===t)).length} / ${LIB.length} hikâye okundu`;
+}
+function openStory(i){
+  libIdx=i; ctx={type:"lib"}; const x=libList[i];
+  libSeen.add(x.t); store.set("seen",[...libSeen]);
+  renderSheet({...x}, CATS[x.c], i>0, i<libList.length-1, "‹ Önceki hikâye", "Sonraki hikâye ›");
+}
+function libStep(dir){ const n=libIdx+dir; if(n>=0 && n<libList.length) openStory(n); }
+const _hide=hide;
+hide=function(){ _hide(); if(ctx.type==="lib") renderLib(); };
+document.getElementById("closeBtn").onclick=()=>hide();
+
+/* router */
+function route(){
+  const h=location.hash, lib=h==="#hikayeler", cami=h==="#cami";
+  document.getElementById("libView").hidden=!lib;
+  document.getElementById("camiView").hidden=!cami;
+  document.getElementById("calView").hidden=lib||cami;
+  if(!sheet.hidden) hide();
+  if(lib) renderLib();
+  if(!cami){ const m=document.getElementById("mosque"); m.classList.remove("open","zoom"); document.getElementById("mHint").textContent="Kapıları görmek için camiye dokun"; }
+  window.scrollTo(0,0);
+}
+addEventListener("hashchange",route);
+route();
+
+/* ---------- floating golden motes ---------- */
+(function(){
+  const cv=document.getElementById("sky"), ctx=cv.getContext("2d");
+  let W,H,motes=[],dpr=Math.min(window.devicePixelRatio||1,2);
+  function size(){
+    W=cv.clientWidth; H=cv.clientHeight; cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    motes=Array.from({length:Math.round(W*H/26000)},()=>({x:Math.random()*W,y:Math.random()*H,r:.8+Math.random()*1.8,v:.1+Math.random()*.3,p:Math.random()*6.28}));
+  }
+  function draw(t){
+    ctx.clearRect(0,0,W,H);
+    for(const m of motes){
+      if(!reduce){ m.y-=m.v; m.x+=Math.sin(t*.0008+m.p)*.25; if(m.y<-10){m.y=H+10;m.x=Math.random()*W;} }
+      const a=reduce?.5:.25+.75*Math.abs(Math.sin(t*.0015+m.p));
+      const g=ctx.createRadialGradient(m.x,m.y,0,m.x,m.y,m.r*5);
+      g.addColorStop(0,`rgba(255,226,160,${.75*a})`); g.addColorStop(1,"rgba(240,182,90,0)");
+      ctx.fillStyle=g; ctx.beginPath(); ctx.arc(m.x,m.y,m.r*5,0,6.28); ctx.fill();
+    }
+    if(!reduce) requestAnimationFrame(draw);
+  }
+  size(); addEventListener("resize",()=>{ size(); if(reduce) draw(0); });
+  requestAnimationFrame(draw);
+})();
+
+/* ---------- mosque entrance ---------- */
+(function(){
+  const m=document.getElementById("mosque"), hint=document.getElementById("mHint"), flash=document.getElementById("flash"), cv=document.getElementById("camiView");
+  let busy=false;
+  const go=()=>{ if(location.hash==="#cami") route(); else location.hash="cami"; };
+  function enter(){
+    if(reduce){ busy=false; go(); return; }
+    m.classList.add("zoom"); flash.classList.add("on");
+    setTimeout(()=>{
+      go();
+      cv.classList.add("reveal");
+      requestAnimationFrame(()=>flash.classList.remove("on"));
+      setTimeout(()=>{ cv.classList.remove("reveal"); },2600);
+      busy=false;
+    },1250);
+  }
+  // whenever we are back outside: unlock the mosque and reset its door
+  addEventListener("hashchange",()=>{ if(location.hash!=="#cami"){ busy=false; m.classList.remove("open","zoom"); flash.classList.remove("on"); } });
+  addEventListener("pageshow",()=>{ if(location.hash!=="#cami"){ busy=false; m.classList.remove("open","zoom"); flash.classList.remove("on"); } });
+  m.addEventListener("click",()=>{
+    if(busy) return; busy=true;
+    if(m.classList.contains("open")){ enter(); return; }
+    m.classList.add("open"); hint.textContent="Bismillah… içeri giriliyor";
+    sparkleAt(m);
+    setTimeout(enter, reduce?50:1150);
+  });
+})();
+
+/* ---------- mosque interior ---------- */
+(function(){
+  const f=n=>n.toFixed(1);
+  let o=`<defs>
+    <linearGradient id="wallG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a1d1f"/><stop offset=".55" stop-color="#e7d6b8"/><stop offset="1" stop-color="#d4bd96"/></linearGradient>
+    <linearGradient id="bayG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a0c0c"/><stop offset="1" stop-color="#6b3a22"/></linearGradient>
+    <radialGradient id="mihG" cx="50%" cy="70%" r="70%"><stop offset="0" stop-color="#fff3d0"/><stop offset=".5" stop-color="#e8b864"/><stop offset="1" stop-color="#8a5524"/></radialGradient>
+    <radialGradient id="lampDot" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#fffbe8"/><stop offset=".5" stop-color="#ffd27a"/><stop offset="1" stop-color="#f0a040" stop-opacity="0"/></radialGradient>
+    <pattern id="tile" width="22" height="22" patternUnits="userSpaceOnUse"><rect width="22" height="22" fill="#efe2c8"/><path d="M11 2L14 8L20 11L14 14L11 20L8 14L2 11L8 8Z" fill="#9c2f2a" opacity=".75"/><circle cx="11" cy="11" r="2" fill="#2f5d73"/></pattern>
+    <filter id="iglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>`;
+  o+=`<rect width="1200" height="520" fill="url(#wallG)"/>`;
+  // upper stained-glass windows
+  for(let i=0;i<13;i++){ const x=40+i*92; o+=`<path d="M${x} 110V78Q${x} 62 ${x+14} 56Q${x+28} 62 ${x+28} 78V110Z" fill="#2a0c0c"/><path d="M${x+3} 108V79Q${x+3} 66 ${x+14} 60Q${x+25} 66 ${x+25} 79V108Z" fill="${["#e0573f","#f0b65a","#3f8fa8","#f0b65a"][i%4]}" opacity=".85"/><circle cx="${x+14}" cy="84" r="4" fill="#fff3d0" opacity=".8"/>`; }
+  // arcade: piers + ablaq (red/cream) arches
+  const piers=[0,200,400,800,1000,1200];
+  const bays=[[0,200],[200,400],[800,1000],[1000,1200]];
+  bays.forEach(([a,b])=>{ const c=(a+b)/2;
+    const path=`M${a+22} 430V250Q${a+22} 168 ${c} 146Q${b-22} 168 ${b-22} 250V430`;
+    o+=`<path d="${path}Z" fill="url(#bayG)"/>`;
+    o+=`<path d="${path}" fill="none" stroke="#efe2c8" stroke-width="16"/><path d="${path}" fill="none" stroke="#9c2f2a" stroke-width="16" stroke-dasharray="12 12"/>`;
+    o+=`<path d="M${a+46} 430V300Q${a+46} 250 ${c} 236Q${b-46} 250 ${b-46} 300V430Z" fill="#f0b65a" opacity=".12"/>`;
+  });
+  piers.forEach(x=>{ o+=`<rect x="${x-14}" y="140" width="28" height="290" fill="#e9dbc0"/><rect x="${x-18}" y="232" width="36" height="10" fill="#c7b08a"/><rect x="${x-18}" y="420" width="36" height="12" fill="#c7b08a"/>`; });
+  // central qibla wall with tile band
+  o+=`<rect x="414" y="120" width="372" height="310" fill="#eadcc2"/>`;
+  o+=`<rect x="440" y="150" width="320" height="280" fill="url(#tile)"/>`;
+  o+=`<rect x="440" y="150" width="320" height="280" fill="none" stroke="#9a7233" stroke-width="4"/>`;
+  // inscription above mihrab (Âl-i İmrân 37)
+  o+=`<rect x="440" y="150" width="320" height="40" fill="#1f3f52"/><text x="600" y="178" text-anchor="middle" font-family="Amiri, serif" font-size="22" fill="#e9c98a" direction="rtl">كُلَّمَا دَخَلَ عَلَيْهَا زَكَرِيَّا الْمِحْرَابَ</text>`;
+  // mihrab niche + muqarnas
+  o+=`<path d="M520 430V286Q520 222 600 202Q680 222 680 286V430Z" fill="#c7a46a"/>`;
+  o+=`<path d="M532 430V290Q532 234 600 216Q668 234 668 290V430Z" fill="url(#mihG)"/>`;
+  [[3,226,22],[5,240,20],[7,256,17]].forEach(([n,y,w])=>{ const sx=600-n*w/2; for(let i=0;i<n;i++){ const x=sx+i*w; o+=`<path d="M${f(x)} ${y+14}V${f(y+w*.55)}Q${f(x)} ${f(y+w*.1)} ${f(x+w/2)} ${y}Q${f(x+w)} ${f(y+w*.1)} ${f(x+w)} ${f(y+w*.55)}V${y+14}Z" fill="#f7e6c0" stroke="#9a7233" stroke-width=".8" opacity=".85"/>`; } });
+  o+=`<ellipse cx="600" cy="380" rx="70" ry="60" fill="#fff3d0" opacity=".35" filter="url(#iglow)"/>`;
+  // candlesticks
+  for(const x of [494,706]){ o+=`<rect x="${x-3}" y="330" width="6" height="96" fill="#b8955c"/><path d="M${x-14} 430L${x} 404L${x+14} 430Z" fill="#9a7233"/><rect x="${x-6}" y="300" width="12" height="32" rx="2" fill="#f7efe0"/><ellipse class="avize-lamp" cx="${x}" cy="292" rx="5" ry="9" fill="#ffd27a"/><circle cx="${x}" cy="292" r="16" fill="#ffd27a" opacity=".3" filter="url(#iglow)"/>`; }
+  // minber (right)
+  o+=`<path d="M790 430L790 300L900 190L924 190L924 430Z" fill="#7a4a2a"/><path d="M800 430L800 306L902 204L912 204L912 430Z" fill="none" stroke="#d9b26a" stroke-width="2"/>`;
+  for(let i=0;i<8;i++){ const x=806+i*13, y=420-i*25; o+=`<rect x="${x}" y="${y}" width="16" height="4" fill="#d9b26a" opacity=".7"/>`; }
+  o+=`<rect x="898" y="150" width="30" height="40" fill="#7a4a2a" stroke="#d9b26a" stroke-width="1.5"/><path d="M894 150L913 96L932 150Z" fill="url(#lead)"/><line x1="913" y1="96" x2="913" y2="84" stroke="#d9b26a" stroke-width="1.5"/>`;
+  o+=`<path d="M776 430V330Q776 316 790 312Q804 316 804 330V430Z" fill="#5a3322" stroke="#d9b26a" stroke-width="1.5"/>`;
+  // carpet with prayer rows (saf)
+  o+=`<rect x="0" y="430" width="1200" height="90" fill="#7a1f22"/>`;
+  [[440,26,30],[470,32,36],[500,40,44]].forEach(([y,w,h])=>{ for(let x=-w/2;x<1200+w;x+=w+6){ o+=`<path d="M${f(x)} ${y+h}V${f(y+w*.45)}Q${f(x)} ${y} ${f(x+w/2)} ${y-4}Q${f(x+w)} ${y} ${f(x+w)} ${f(y+w*.45)}V${y+h}Z" fill="#9c2f2a" stroke="#e9c98a" stroke-opacity=".55" stroke-width="1"/>`; } });
+  // great chandelier (avize)
+  const cx=600, cy=150, rx=470, ry=34, N=44;
+  for(let i=0;i<10;i++){ const t=i/10*Math.PI*2; o+=`<line x1="${cx}" y1="-60" x2="${f(cx+rx*Math.cos(t))}" y2="${f(cy+ry*Math.sin(t))}" stroke="#2a1408" stroke-opacity=".55" stroke-width="1"/>`; }
+  const lamps=[]; for(let i=0;i<N;i++){ const t=i/N*Math.PI*2; lamps.push([cx+rx*Math.cos(t), cy+ry*Math.sin(t), Math.sin(t)]); }
+  const lampSvg=([x,y,d],k)=>{ const sc=.75+.35*(d+1)/2; return `<g class="avize-lamp" style="animation-delay:${-(k%9)*.4}s"><line x1="${f(x)}" y1="${f(y)}" x2="${f(x)}" y2="${f(y+14*sc)}" stroke="#3a2010" stroke-width="1"/><circle cx="${f(x)}" cy="${f(y+22*sc)}" r="${f(16*sc)}" fill="url(#lampDot)"/><path d="M${f(x-5*sc)} ${f(y+16*sc)}H${f(x+5*sc)}L${f(x+3.5*sc)} ${f(y+28*sc)}H${f(x-3.5*sc)}Z" fill="#fff0c8" opacity=".9"/><path d="M${f(x-5.5*sc)} ${f(y+15*sc)}H${f(x+5.5*sc)}" stroke="#9a7233" stroke-width="1.4"/></g>`; };
+  lamps.filter(l=>l[2]<0).forEach((l,k)=>o+=lampSvg(l,k));
+  o+=`<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="#9a7233" stroke-width="3"/><ellipse cx="${cx}" cy="${cy+4}" rx="${rx}" ry="${ry}" fill="none" stroke="#5a4220" stroke-width="1.2"/>`;
+  lamps.filter(l=>l[2]>=0).forEach((l,k)=>o+=lampSvg(l,k));
+  document.getElementById("camiSvg").innerHTML=o;
+})();
+
+/* ---------- Kadir & Bayram content ---------- */
+const KZ=[
+  {a:"اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",o:"Allâhümme inneke afüvvün tühibbül-afve fa'fü annî",m:"Allah'ım! Sen affedicisin, affetmeyi seversin; beni affet.",c:100},
+  {a:"أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ وَأَتُوبُ إِلَيْهِ",o:"Estağfirullâhe'l-azîm ve etûbü ileyh",m:"Yüce Allah'tan bağışlanma diler, O'na tövbe ederim.",c:100},
+  {a:"اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ",o:"Allâhümme salli alâ seyyidinâ Muhammedin ve alâ âli seyyidinâ Muhammed",m:"Allah'ım! Efendimiz Muhammed'e ve ailesine salât eyle.",c:100},
+  {a:"لَا إِلَٰهَ إِلَّا اللَّهُ",o:"Lâ ilâhe illallâh",m:"Allah'tan başka ilah yoktur.",c:100},
+  {a:"سُبْحَانَ اللَّهِ وَبِحَمْدِهِ سُبْحَانَ اللَّهِ الْعَظِيمِ",o:"Sübhânallâhi ve bihamdihî, sübhânallâhil-azîm",m:"Dile hafif, mizanda ağır, Rahmân'a sevimli iki söz (Buhârî).",c:100}
+];
+let kzState=store.get("kz",[0,0,0,0,0]), planState=store.get("plan",{});
+const planList=(key,items)=>`<ul class="plan">${items.map((t,i)=>`<li><input type="checkbox" id="pl-${key}-${i}" data-plan="${key}-${i}" ${planState[key+"-"+i]?"checked":""}><label for="pl-${key}-${i}">${esc(t)}</label></li>`).join("")}</ul>`;
+function kadirExtra(){
+  return `<div class="block special"><h3>Kadir Gecesi Programı</h3>
+    <p>Kadir gecesi bin aydan hayırlıdır. Peygamberimiz, "Kim Kadir gecesini inanarak ve sevabını Allah'tan umarak ihya ederse geçmiş günahları bağışlanır" buyurdu (Buhârî). Bu geceyi şöyle değerlendirebilirsin:</p>
+    ${planList("kadir",[
+      "Akşam ve yatsı namazlarını, ardından teravihi mümkünse cemaatle kıl.",
+      "Kaza namazın varsa kıl; yoksa ikişer rekât nafile namaz kıl.",
+      "Tesbih namazı kıl. Peygamberimiz bu namazı amcası Hz. Abbas'a öğretmiştir (Ebû Dâvûd).",
+      "Kadir, Mülk ve Yâsîn surelerini oku; gücün yeterse bir cüz oku.",
+      "Kadir gecesi duasını çokça tekrar et.",
+      "Samimi bir tövbe et ve Seyyidü'l-İstiğfâr'ı oku.",
+      "Anne-baban, ailen, hastalar, yetimler ve bütün ümmet için dua et.",
+      "Gecenin son üçte birinde uyanık ol ya da sahura kalk; o vakit duaların kabul vaktidir."])}
+  </div>
+  <div class="block"><h3>Bu gece çekilecek zikirler · dokunarak say</h3><div class="kz-list">
+    ${KZ.map((z,i)=>`<button type="button" class="kz${kzState[i]>=z.c?" done":""}" data-kz="${i}"><span class="a" lang="ar">${z.a}</span><span class="o">${esc(z.o)}</span><span class="m">${esc(z.m)}</span><span class="c" id="kzc${i}">${kzState[i]} / ${z.c}</span></button>`).join("")}
+  </div></div>
+  <div class="block"><h3>Seyyidü'l-İstiğfâr · Buhârî, Daavât 2</h3>
+    <p>Allah'ım! Sen benim Rabbimsin. Senden başka ilah yoktur. Beni sen yarattın, ben senin kulunum. Gücüm yettiğince sana verdiğim söz ve ahdin üzerindeyim. Yaptıklarımın şerrinden sana sığınırım. Bana verdiğin nimetleri ikrar eder, günahımı itiraf ederim. Beni bağışla; çünkü günahları senden başka bağışlayan yoktur.</p></div>
+  <div class="block"><h3>Arapçası</h3><div class="arabic" lang="ar">اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ</div></div>`;
+}
+function bayramTop(){
+  return `<div class="block bayram-hero"><p class="ab" lang="ar">عِيدٌ مُبَارَكٌ</p><p class="bt">Bayramın Mübarek Olsun</p>
+    <p>Bir ay boyunca tuttuğun oruçlar, kıldığın teravihler, okuduğun Kur'an ve ettiğin dualar Allah katında kabul olsun.</p></div>`;
+}
+function bayramExtra(){
+  return `<div class="block special"><h3>Bayramlaşma sözü</h3>
+      <div class="arabic" lang="ar">تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ</div>
+      <p class="translit" style="margin-top:8px">Tekabbelallâhu minnâ ve minküm</p>
+      <p>Allah bizden de sizden de kabul etsin. Sahabeler bayramda birbirlerini bu sözle tebrik ederdi.</p></div>
+    <div class="block special"><h3>Bayram sabahının sünnetleri</h3>
+    ${planList("bayram",[
+      "Fitreni bayram namazından önce ver.",
+      "Sabah gusül abdesti al, en güzel ve temiz elbiseni giy, güzel koku sür.",
+      "Namaza gitmeden önce tek sayıda hurma ya da tatlı bir şey ye (Buhârî).",
+      "Yolda tekbir getirerek bayram namazına git.",
+      "Namaza bir yoldan gidip başka bir yoldan dön (Buhârî).",
+      "Anne-babanın ve büyüklerinin elini öp, bayramlarını kutla.",
+      "Küs olduğun biriyle barış. Peygamberimiz üç günden fazla küs durmayı yasakladı.",
+      "Çocukları sevindir: bayram harçlığı, şeker ya da küçük bir hediye.",
+      "Kabristanı ziyaret et, vefat edenler için Fâtiha oku.",
+      "Şevval ayında altı gün oruç tutmaya niyet et (Müslim)."])}
+  </div>`;
+}
+document.getElementById("pBody").addEventListener("change",e=>{
+  const k=e.target.dataset && e.target.dataset.plan; if(!k) return;
+  planState[k]=e.target.checked; store.set("plan",planState);
+});
+document.getElementById("pBody").addEventListener("click",e=>{
+  const b=e.target.closest(".kz"); if(!b) return;
+  const i=+b.dataset.kz, z=KZ[i];
+  kzState[i]=kzState[i]>=z.c ? 0 : kzState[i]+1; store.set("kz",kzState);
+  document.getElementById("kzc"+i).textContent=`${kzState[i]} / ${z.c}`;
+  try{ navigator.vibrate && navigator.vibrate(10); }catch(err){}
+  if(kzState[i]===z.c){ b.classList.add("done"); toast("Mâşallah! 100 tamamlandı. Allah kabul etsin."); } else if(kzState[i]===0) b.classList.remove("done");
+});
+
+/* ---------- fireworks ---------- */
+let fxRunning=false;
+function fireworks(ms){
+  if(reduce || fxRunning) return; fxRunning=true;
+  const cv=document.getElementById("fx"), c=cv.getContext("2d"), dpr=Math.min(devicePixelRatio||1,2);
+  const W=cv.width=innerWidth*dpr, H=cv.height=innerHeight*dpr;
+  const cols=["#fff6dc","#f3dcae","#d9b26a","#f0b65a","#e0573f","#ffffff"];
+  let parts=[], end=performance.now()+ms, last=0;
+  function burst(){
+    const x=W*(.12+Math.random()*.76), y=H*(.12+Math.random()*.4), col=cols[Math.random()*cols.length|0], n=70;
+    for(let i=0;i<n;i++){ const a=i/n*Math.PI*2, v=(1.5+Math.random()*3.2)*dpr; parts.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,col,s:(1.4+Math.random()*1.6)*dpr}); }
+  }
+  function tick(t){
+    if(t<end && t-last>380){ burst(); if(Math.random()<.5) burst(); last=t; }
+    c.globalCompositeOperation="destination-out"; c.fillStyle="rgba(0,0,0,.22)"; c.fillRect(0,0,W,H);
+    c.globalCompositeOperation="lighter";
+    parts=parts.filter(p=>p.l>0);
+    for(const p of parts){ p.x+=p.vx; p.y+=p.vy; p.vy+=.045*dpr; p.vx*=.985; p.vy*=.985; p.l-=.011;
+      c.globalAlpha=Math.max(0,p.l); c.fillStyle=p.col; c.beginPath(); c.arc(p.x,p.y,p.s,0,6.28); c.fill(); }
+    c.globalAlpha=1;
+    if(t<end || parts.length) requestAnimationFrame(tick); else { c.clearRect(0,0,W,H); fxRunning=false; }
+  }
+  requestAnimationFrame(tick);
+}
+</script>
+
+</body>
+</html>
